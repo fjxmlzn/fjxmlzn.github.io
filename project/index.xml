@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project-rsses on Zinan Lin&#39;s Homepage</title>
+    <link>http://zinanlin.me/project/index.xml</link>
+    <description>Recent content in Project-rsses on Zinan Lin&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Zinan Lin</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Decaf Debugger</title>
+      <link>http://zinanlin.me/project/decaf/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/decaf/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://web.stanford.edu/class/archive/cs/cs143/cs143.1128/handouts/030%20Decaf%20Specification.pdf&#34; target=&#34;_blank&#34;&gt;Decaf&lt;/a&gt; is a strongly typed, object-oriented programming language. In this project, I built up a Decaf debugger which supports common debug tools such as variable view, step into, step over and breakpoints.&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:70%;margin:0px auto;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/decaf-debugger-interface.png&#34; alt=&#34;Example&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 1. The Interface of Decaf Debugger&lt;/center&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The source code can be downloaded &lt;a href=&#34;https://s3-us-west-1.amazonaws.com/lzn/decaf_debugger_src.zip&#34; target=&#34;&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h1&gt;
+
+&lt;p&gt;The included Decaf compiler is based on my course project in &lt;i&gt; Principles and Techniques of Compilers&lt;/i&gt; (Tsinghua 30240382) directed by Prof. Shengyuan Wang. The included TAC simulator is based on the version provided by Prof. Shengyuan Wang.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linkgame Automation Platform</title>
+      <link>http://zinanlin.me/project/linkgame/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/linkgame/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;It is a platform for project in &lt;i&gt;Advanced Matlab Programming and Its Application&lt;/i&gt; (Tsinghua 20230242). I helped Prof. Yuantao Gu design and implement this platform. It is being used since 2016 for over 270 students every year.&lt;/p&gt;
+
+&lt;p&gt;The goal of the course project is to develop a script who can automatically play linkgame (a video game) using signal processing techniques. This platform includes gathering images from camera which is monitoring the computer screen, preprocessing the images, mouse and keyboard control, and the complete implementation and AI logic of linkgame.&lt;/p&gt;
+
+&lt;p&gt;You can go to the &lt;a href=&#34;https://github.com/fjxmlzn/linkgame-platform&#34; target=&#34;_blank&#34;&gt;github page&lt;/a&gt; for further details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Luogu Website</title>
+      <link>http://zinanlin.me/project/lugou/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/lugou/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;I am the co-founder and developer of Luogu website (&lt;a href=&#34;http://www.luogu.org/&#34;&gt;http://www.luogu.org/&lt;/a&gt;) which is designed for students who learn computer algorithms. It provides a platform for students to automatically grade their codes, organize and take part in algorithm contests and exchange ideas and thoughts. By the end of Oct. 2016, there are more than 27,000 registered users and total page views exceed 10,000,000.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UI Library for Windows Console</title>
+      <link>http://zinanlin.me/project/uiframework/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/uiframework/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;As we all know that Windows Console provides a command line interaction for users. Command interaction is very convenient and friendly for us programmers, but it is not the case for ordinary users. In this project, I built up an entire UI library for Windows Console which provides button, input box, menu, frame and many other widgets in a way that is similar to other libraries like QT and MFC. Developers can easily create interactive Windows Console applications with this library.&lt;/p&gt;
+
+&lt;p&gt;The framework is designed in an object-oriented manner, so that you developers can easily customize the interface and functions and derive their own classes. Here is a sample application built up by this library.&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:50%;float:left;padding-left:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample1.png&#34; alt=&#34;Parallel Testing Framework&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:50%;float:right;padding-right:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample2.png&#34; alt=&#34;Proxy Setting Up&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:50%;float:left;padding-left:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample3.png&#34; alt=&#34;Parallel Testing Framework&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:50%;float:right;padding-right:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample4.png&#34; alt=&#34;Proxy Setting Up&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+    &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 1. Sample Application&lt;/center&gt;
+&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The source code can be downloaded &lt;a href=&#34;https://s3-us-west-1.amazonaws.com/lzn/windows_console_UI_library_src.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; and the precompiled version can be downloaded &lt;a href=&#34;https://s3-us-west-1.amazonaws.com/lzn/windows_console_UI_library_bin.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

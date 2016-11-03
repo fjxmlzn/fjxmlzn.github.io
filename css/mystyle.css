@@ -1,0 +1,45 @@
+.award_year {
+    float:right;
+    font-style: italic;
+}
+
+.award_title {
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.award_content {
+    
+}
+
+.award_desp {
+    font-size: 65%;
+    padding-left: 5%;
+}
+
+.award_li {
+    clear:both;
+}
+
+.honor_year {
+    float:right;
+    font-style: italic;
+}
+
+.honor_title {
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.honor_content {
+    
+}
+
+.honor_desp {
+    font-size: 65%;
+    padding-left: 5%;
+}
+
+.honor_li {
+    clear:both;
+}

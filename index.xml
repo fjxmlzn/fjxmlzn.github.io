@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zinan Lin&#39;s Homepage</title>
+    <link>http://zinanlin.me/index.xml</link>
+    <description>Recent content on Zinan Lin&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Zinan Lin</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Decaf Debugger</title>
+      <link>http://zinanlin.me/project/decaf/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/decaf/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://web.stanford.edu/class/archive/cs/cs143/cs143.1128/handouts/030%20Decaf%20Specification.pdf&#34; target=&#34;_blank&#34;&gt;Decaf&lt;/a&gt; is a strongly typed, object-oriented programming language. In this project, I built up a Decaf debugger which supports common debug tools such as variable view, step into, step over and breakpoints.&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:70%;margin:0px auto;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/decaf-debugger-interface.png&#34; alt=&#34;Example&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 1. The Interface of Decaf Debugger&lt;/center&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The source code can be downloaded &lt;a href=&#34;https://s3-us-west-1.amazonaws.com/lzn/decaf_debugger_src.zip&#34; target=&#34;&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h1&gt;
+
+&lt;p&gt;The included Decaf compiler is based on my course project in &lt;i&gt; Principles and Techniques of Compilers&lt;/i&gt; (Tsinghua 30240382) directed by Prof. Shengyuan Wang. The included TAC simulator is based on the version provided by Prof. Shengyuan Wang.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linkgame Automation Platform</title>
+      <link>http://zinanlin.me/project/linkgame/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/linkgame/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;It is a platform for project in &lt;i&gt;Advanced Matlab Programming and Its Application&lt;/i&gt; (Tsinghua 20230242). I helped Prof. Yuantao Gu design and implement this platform. It is being used since 2016 for over 270 students every year.&lt;/p&gt;
+
+&lt;p&gt;The goal of the course project is to develop a script who can automatically play linkgame (a video game) using signal processing techniques. This platform includes gathering images from camera which is monitoring the computer screen, preprocessing the images, mouse and keyboard control, and the complete implementation and AI logic of linkgame.&lt;/p&gt;
+
+&lt;p&gt;You can go to the &lt;a href=&#34;https://github.com/fjxmlzn/linkgame-platform&#34; target=&#34;_blank&#34;&gt;github page&lt;/a&gt; for further details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Luogu Website</title>
+      <link>http://zinanlin.me/project/lugou/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/lugou/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;I am the co-founder and developer of Luogu website (&lt;a href=&#34;http://www.luogu.org/&#34;&gt;http://www.luogu.org/&lt;/a&gt;) which is designed for students who learn computer algorithms. It provides a platform for students to automatically grade their codes, organize and take part in algorithm contests and exchange ideas and thoughts. By the end of Oct. 2016, there are more than 27,000 registered users and total page views exceed 10,000,000.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UI Library for Windows Console</title>
+      <link>http://zinanlin.me/project/uiframework/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/project/uiframework/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;As we all know that Windows Console provides a command line interaction for users. Command interaction is very convenient and friendly for us programmers, but it is not the case for ordinary users. In this project, I built up an entire UI library for Windows Console which provides button, input box, menu, frame and many other widgets in a way that is similar to other libraries like QT and MFC. Developers can easily create interactive Windows Console applications with this library.&lt;/p&gt;
+
+&lt;p&gt;The framework is designed in an object-oriented manner, so that you developers can easily customize the interface and functions and derive their own classes. Here is a sample application built up by this library.&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:50%;float:left;padding-left:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample1.png&#34; alt=&#34;Parallel Testing Framework&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:50%;float:right;padding-right:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample2.png&#34; alt=&#34;Proxy Setting Up&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:50%;float:left;padding-left:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample3.png&#34; alt=&#34;Parallel Testing Framework&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:50%;float:right;padding-right:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/uiframework-sample4.png&#34; alt=&#34;Proxy Setting Up&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+    &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 1. Sample Application&lt;/center&gt;
+&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The source code can be downloaded &lt;a href=&#34;https://s3-us-west-1.amazonaws.com/lzn/windows_console_UI_library_src.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; and the precompiled version can be downloaded &lt;a href=&#34;https://s3-us-west-1.amazonaws.com/lzn/windows_console_UI_library_bin.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Two-Step Model for Searching a Lost Plane</title>
+      <link>http://zinanlin.me/publication/plane/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/publication/plane/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;Searching for a lost plane in vast ocean became an urgent and tough task in 2014. Searching plan demands to build appropriate and effective mathematical models.&lt;/p&gt;
+
+&lt;p&gt;In this article, we deeply analyse this problem. We build generic mathematical models to describe the air crash and give an effective algorithm to design a rescue plan. We divide the problem into two parts. In the first step we focus on how to get a continuous probability density distribution which describes the possible point where the plane crashed. In the second step we focus on how to find an adaptive and effective rescue plan using the probability density distribution.&lt;/p&gt;
+
+&lt;p&gt;In the first step, when calculating the distribution of the crash point, we analyze the geometrical conditions and the dynamic conditions, which are the most common boundary conditions of airline accident, separately, and integrate them by taking proper weighted average. In the Basic Accident Model, we find the Basic Probability Density Distribution (BPD) of the crash point through pure geometrical boundary conditions, including the last known position. In the Additional Accident Model, we give a statistical method to calculate Additional Probability Density Distribution (APD) of the crash point, in which the dynamic conditions (last known speed, etc.) are used as criterions, in some ways, to find the most suitable historical similar accidents as samples. Although it is usually discrete or incomplete in the initial prediction of the crash point, the dynamic conditions’ selective function is made good use of through independent and statistical analysis. Then, we discuss the choice of weighting factors when integrating the two distributions above, in order to make the Integrated Probability Density Distribution (IPD) of the crash point as effective as possible in the search plan making.&lt;/p&gt;
+
+&lt;p&gt;In the second step, we discretize the probability density distribution and divide the searching region into grids. We use graph theory to describe the problem. Firstly we set up the simplest model. We prove it to be a non-deterministic polynomial complete (NPC) problem. Then we propose a near-optimal solution using simulated annealing approach, with modest time complexity and space complexity but strong operability. Later we optimize the model and finally it is really close to the actual condition. We use probability theory and greedy algorithm to analyse it and propose a ``greedy iterative algorithm&amp;rdquo; which has good performance to solve this model.&lt;/p&gt;
+
+&lt;p&gt;Finally, we simulate the whole model using matlab and C++ language and analyse its performance.&lt;/p&gt;
+
+&lt;p&gt;Two steps of our model are both adaptive enough to adjust to actual complex conditions.&lt;/p&gt;
+
+&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+
+&lt;p&gt;This was a work posted for Problem B in &lt;a href=&#34;http://www.comap.com/undergraduate/contests/mcm/contests/2015/problems/&#34; target=&#34;_blank&#34;&gt;COMAP’s 2015 Mathematical Contest in Modeling&lt;/a&gt;. The original problem was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Recall the lost Malaysian flight MH370. Build a generic mathematical model that could assist &amp;ldquo;searchers&amp;rdquo; in planning a useful search for a lost plane feared to have crashed in open water such as the Atlantic, Pacific, Indian, Southern, or Arctic Ocean while flying from Point A to Point B. Assume that there are no signals from the downed plane. Your model should recognize that there are many different types of planes for which we might be searching and that there are many different types of search planes, often using different electronics or sensors. Additionally, prepare a 1-2 page non-technical paper for the airlines to use in their press conferences concerning their plan for future searches.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We won Meritorious Winners (Top 11% worldwide) in &lt;a href=&#34;http://www.comap.com/undergraduate/contests/mcm/contests/2015/problems/&#34; target=&#34;_blank&#34;&gt;COMAP’s 2015 Mathematical Contest in Modeling&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;author-contributions&#34;&gt;Author Contributions&lt;/h1&gt;
+
+&lt;p&gt;Zinan Lin solved the second step of the problem (Section 4 in the paper). Renzhi Duan solved the first step of the problem (Section 3 in the paper). Mengying Xu wrote the non-technical interpretation of the study (Section 7 in the paper).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced Multi-Step Optimal Donation Strategy Based on Objective Criteria of Gaussian Distribution and Prediction Model of Neural Network</title>
+      <link>http://zinanlin.me/publication/donation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/publication/donation/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;The Goodgrant Foundation intends to donate a total of \$100,000,000 to some selected U.S. educational institutions annually for five years. They want to know the optimal investment strategy and its return on investment (ROI).&lt;/p&gt;
+
+&lt;p&gt;In the first step, we propose two kinds of donation&amp;ndash;donation for academic facilities’improvement and donation as student grant. To evaluate the effect of the first kind of donation, we propose several models. We first calculate the best Gaussian distribution to describe students&amp;rsquo; ability before entering school and after leaving school. Through these two values, we gain two parameters which define school&amp;rsquo;s effect on students. By comparing the real students&amp;rsquo; performance with expected performance when the same students entering an &amp;ldquo;average school&amp;rdquo;, we obtain Relative Institution Quality (RIQ) which evaluates school education quality. The calculation involves Gaussian Distance Measurement (GDM) which has beautiful mathematical form. We utilize mutual information to evaluate RIQ and prove that it has good performance. Furthermore, the top five school which has extremely high RIQ are Harvard University, Massachusetts Institute of Technology, University of Pennsylvania, Stanford University and Georgetown University. It proves that our model conforms to reality well. Then, we use neural network model to calculate the ROI value when donation amount changes. We use piece wise linear function to evaluate the second kind of donation. Finally, we unify these two evaluation functions and give the ROI representation. We optimize the proportion of two kinds of donation in order to maximize the final ROI value in a school.&lt;/p&gt;
+
+&lt;p&gt;In the second step, we strictly prove it to be a Strict Non-Deterministic Polynomial Complete (S-NPC) problem, which means it is almost impossible to solve it in affordable time. Thus, we introduce greedy algorithm and dynamic programming strategy and propose a novel algorithm to get an approximate optimal solution. The algorithm reduces the time complexity of the problem essentially and has good performance according to simulation.&lt;/p&gt;
+
+&lt;p&gt;Because there are much missing data, and some of them are important when doing manual analysis, we utilize Gaussian Mixture Models to predict some of them.&lt;/p&gt;
+
+&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+
+&lt;p&gt;This was a work posted for Problem C in &lt;a href=&#34;http://www.comap.com/undergraduate/contests/mcm/contests/2016/problems/&#34; target=&#34;_blank&#34;&gt;COMAP’s 2016 Mathematical Contest in Modeling&lt;/a&gt;. The original problem was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Goodgrant Foundation is a charitable organization that wants to help improve educational performance of undergraduates attending colleges and universities in the United States. To do this, the foundation intends to donate a total of $100,000,000 (US100 million) to an appropriate group of
+schools per year, for five years, starting July 2016. In doing so, they do not want to duplicate the investments and focus of other large grant organizations such as the Gates Foundation and Lumina Foundation.
+Your team has been asked by the Goodgrant Foundation to develop a model to determine an optimal investment strategy that identifies the schools, the investment amount per school, the return on that investment, and the time duration that the organization’s money should be provided to have the
+highest likelihood of producing a strong positive effect on student performance. This strategy should contain a 1 to N optimized and prioritized candidate list of schools you are recommending for investment based on each candidate school’s demonstrated potential for effective use of private funding, and an estimated return on investment (ROI) defined in a manner appropriate for a charitable organization such as the Goodgrant Foundation.&lt;/p&gt;
+
+&lt;p&gt;To assist your effort, the attached data file (ProblemCDATA.zip) contains information extracted from the U.S. National Center on Education Statistics (www.nces.ed.gov/ipeds), which maintains an extensive database of survey information on nearly all post-secondary colleges and universities in the United States, and the College Scorecard data set (&lt;a href=&#34;https://collegescorecard.ed.gov&#34;&gt;https://collegescorecard.ed.gov&lt;/a&gt;) which contains various institutional performance data. Your model and subsequent strategy must be based on some
+meaningful and defendable subset of these two data sets.&lt;/p&gt;
+
+&lt;p&gt;In addition to the required one-page summary for your MCM submission, your report must include a letter to the Chief Financial Officer (CFO) of the Goodgrant Foundation, Mr. Alpha Chiang, that describes the optimal investment strategy, your modeling approach and major results, and a brief
+discussion of your proposed concept of a return-on-investment (ROI) that the Goodgrant Foundation should adopt for assessing the 2016 donation(s) and future philanthropic educational investments within the United States. This letter should be no more than two pages in length.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We won Meritorious Winners (Top 10% worldwide) in &lt;a href=&#34;http://www.comap.com/undergraduate/contests/mcm/contests/2016/problems/&#34; target=&#34;_blank&#34;&gt;COMAP’s 2016 Mathematical Contest in Modeling&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;author-contributions&#34;&gt;Author Contributions&lt;/h1&gt;
+
+&lt;p&gt;Zinan Lin solved the the second step (Section 4 in the paper) and part of the first step (Section 3.2.2 &amp;amp; 3.2.3 &amp;amp; 3.3 &amp;amp; 3.4 in the paper) of the problem. Xingyu Jing solved the rest part of first step (Section 3.2.4 &amp;amp; 3.2.5 in the paper). Shengjie Lin did the data preprocessing (Section 2 in the paper) and wrote the non-technical letter of the study (Appendix A in the paper).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Image Similarity Measure Based on Image Sparse Representation</title>
+      <link>http://zinanlin.me/publication/similarity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/publication/similarity/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;The goal of image similarity measure is to assess the similarity of two images in a perceptually consistent manner. It has been widely used in image copy detection, image search, object tracking and many other areas.&lt;/p&gt;
+
+&lt;p&gt;In 2006, Aharon proposed a novel dictionary learning method called K-SVD for sparse representation of signals&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:k-svd&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:k-svd&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It was proved to be very effective in image denoising&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:k-svd2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:k-svd2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Inspired by this work, I am eager to see whether the learned dictionary which contains condensed information of image&amp;rsquo;s local structure can be used for image similarity measure.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start from a brief introduction of K-SVD algorithm. Let $Y\in\mathbb{R}^{n\times N}$ contain the signals in each column, for example, each column stands for a patch of the image. Now we seek to find an overcomplete dictionary $D\in\mathbb{R}^{n\times K}$ and the coefficient matrix $X\in\mathbb{R}^{K\times N}$ such that
+$$ \min_{D,X}{||Y-DX||_F^2}\text{ subject to }\forall i,||x_i||_0\leq T_0$$
+for a fixed $T_0$. Here the notation $||A||_F$ stands for the Frobenius norm, defined as $||A||_F=\sqrt{\sum_{ij}^{}{A_{ij}^2}}$. The dictionary is called overcomplete because K is always larger than n. Because of that, it seems that there are an infinite number of $X$ to make $Y-DX$ equals to zero. However, we require that the number of nonzero elements in each column of $X$ can not exceed $T_0$. That is why we call it a sparse representation.&lt;/p&gt;
+
+&lt;p&gt;K-SVD solves this problem with an iterative way. Each iteration contains two stages. The first is to find $X$ subject to the optimization problem above when assuming that the dictionary $D$ is fixed. This is an NP-hard problem and the approximate solutions can be found by any pursuit algorithm such as OMP&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:OMP&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:OMP&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The second is to update each column of the dictionary $D$ and its corresponding coefficient when assuming the others to be fixed using SVD algorithm. Here are two examples of K-SVD results after 10 iterations.&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:30%;margin:0px auto;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/similarity-example.png&#34; alt=&#34;Example&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 1. Two Examples of Sparse Representation of Images Using K-SVD&lt;/center&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, the dictionary represents the local structure of the image. Furthermore, the weight on each atom of dictionary also contains vital information. Therefore, for each representation, we define $W\in \mathbb{R}^N$ as $W_t=\frac{\sum_{k=1}^{N}X_{t,k}^2}{\sum_{i=1}^K{\sum_{k=1}^{N}X_{i,k}^2}}$ which stands for the weight of atom $t$ in the whole image. The dictionary $D$ and the weight vector $W$ are the two key values representing the feature of an image.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s come to image similarity measure. Assume two images $a$ and $b$ with dictionary $D^a$, $D^b$ and weight vector $W^a$, $W^b$ respectively. The first intuition is that if two images are similar, then their dictionaries must also be similar, i.e., one&amp;rsquo;s dictionary can be well represented by the other&amp;rsquo;s. We formulate this idea as the first part of distance measure:
+$$dis1_{a,b}=\min_Z{||Z||_0}\text{ subject to }||D^a-D^bZ||\leq \delta$$
+The approximate solutions $Z^{a,b}$ can be found by pursuit algorithm such as OMP. Furthermore, the original weights of the matching columns in the dictionaries should be similar. So we introduce the second distance measure as:
+$$dis2_{a,b}=\sum_{i=1}^{K}{\frac{\sum_{j=1}^K|W^a_i-W^b_j|\cdot|Z^{a,b}_{j,i}|}{\sum_{j=1}^{k}|Z^{a,b}_{j,i}|}}$$
+Combining with $dis1_{a,b}$, $dis1_{b,a}$, $dis2_{a,b}$ and $dis2_{b,a}$, we finially get the similarity measure of image $a$ and $b$.&lt;/p&gt;
+
+&lt;p&gt;Based on this image similarity measure, I design image classification/clustering method and test their performance.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Image classification. For each category in the training set, calculate its dictionary and weight vector by putting the patches of all the images in the matrix $Y$. For each test image, calculate its similarity value with the dictionary and weight vector of each category. The image&amp;rsquo;s predicted category is the one with maximum similarity value. I tested this algorithm on three categories. Each category has ten training images and ten testing images. The average accuracy in training set is 93.3% and the average accuracy in testing set is 76.7%.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Image clustering. I adopt hierarchical clustering method. Suppose that there is a graph standing for the clustering scheme. Each node stands for an image and the border&amp;rsquo;s weight is the similarity value of the images it connects. At the beginning, all the images are fully connected, which means they belong to the same category. Later, we discard the edges with lowest weight one by one. The category seperates when new connected blocks emerge. Keep doing that, and finally each category will contain only a single image. I test three categories of images. Each category contains 15 images generated by adjusting the contrast ratio, light intensity, hue, saturation and adding Gaussian noise on 5 core images. The three categories are perfectly separated when cutting off 756 edges.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;reflections&#34;&gt;Reflections&lt;/h1&gt;
+
+&lt;p&gt;It was the first research project I did in university. Looking back one and a half years later, I find that I did not do it good enough in both research method and algorithm design.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I didn&amp;rsquo;t do sufficient test on the image similarity measure and I didn&amp;rsquo;t do the test on public dataset so that I can compare my result with others.&lt;/li&gt;
+&lt;li&gt;The similarity measure I proposed can resist chromatic adjusting and noise pollution. However, because the size and the direction of the image patches are determined, it cannot generate stable similarity values when facing with a scale or rotated image. Maybe I can improve the algorithm by extracting some features that are invariant to scaling, rotation and illumination changes with techniques such as SIFT as a prior step&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:feature&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:feature&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;Image category is a high-level semantics while local structure is a low-level concept. The similarity on local structure does not necessarily indicate that the two images delineate the same thing or belong to the same category. It&amp;rsquo;s a critical flaw in the classification method I designed and I think it can explain why I can only get a reasonable accuracy ratio in very few classes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;author-contributions&#34;&gt;Author Contributions&lt;/h1&gt;
+
+&lt;p&gt;Advisor: &lt;a href=&#34;http://gu.ee.tsinghua.edu.cn/yuantao-gu&#34; target=&#34;_blank&#34;&gt;Yuantao Gu&lt;/a&gt;, Associate Professor at Tsinghua University.&lt;/p&gt;
+
+&lt;p&gt;Zinan Lin finished all the work.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:k-svd&#34;&gt;Aharon, Michal, Michael Elad, and Alfred Bruckstein. &amp;ldquo;K-SVD: An Algorithm for Designing Overcomplete Dictionaries for Sparse Representation.&amp;rdquo; &lt;i&gt;IEEE Transactions on signal processing&lt;/i&gt; 54.11 (2006): 4311-4322.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:k-svd&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:k-svd2&#34;&gt;Elad, Michael, and Michal Aharon. &amp;ldquo;Image denoising via sparse and redundant representations over learned dictionaries.&amp;rdquo; &lt;i&gt;IEEE Transactions on Image processing&lt;/i&gt; 15.12 (2006): 3736-3745.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:k-svd2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:OMP&#34;&gt;Chen, Sheng, Stephen A. Billings, and Wan Luo. &amp;ldquo;Orthogonal least squares methods and their application to non-linear system identification.&amp;rdquo; &lt;i&gt;International Journal of control&lt;/i&gt; 50.5 (1989): 1873-1896.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:OMP&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:feature&#34;&gt;Kang, Li-Wei, et al. &amp;ldquo;Feature-based sparse representation for image similarity assessment.&amp;rdquo; &lt;i&gt;IEEE Transactions on Multimedia&lt;/i&gt; 13.5 (2011): 1019-1030.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:feature&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Large Scale Automatic Sybil Attacks and Vulnerability Measurement on Mobile Services</title>
+      <link>http://zinanlin.me/publication/sybil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/publication/sybil/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;The rapid growth of mobile services makes people connected with each other to a great extent. Especially, crowdsourcing services, which collect information and ideas from its online users rather than from employees or suppliers, and then present the results back to users, give us a lot of convenience. These services exist in many scenes, such as feedback on online shopping services, crowdvoting and online FAQ systems. However, systems that rely on crowdsourced data are inherently vulnerable to &lt;i&gt;&lt;b&gt;sybil attacks&lt;/b&gt;&lt;/i&gt;, creating a large number of fake users to disrupt the system. In a recent work, Wang explored the sybil attack vulnerability in Waze&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:waze&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:waze&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Waze is real-time crowdsourced map service which provides timely information of road events such as traffic, congestion and accidents based on the GPS signal of all users. Wang introduced the techniques to emulate a large number of controlled virtual vehicles and generate any desired traffic events and finally get user re-routed by lightweight scripts. And attackers can even precisely track individual Waze users for the whole day without being noticed. Waze is extremely popular, with an estimated 50 million users. Because Google integrates selected crowdsourced data from Waze into its own map service, this attack can influence far more users.&lt;/p&gt;
+
+&lt;p&gt;As in Waze&amp;rsquo;s example, such a small single sybil attack vulnerability can lead to a big damage. Therefore, it&amp;rsquo;s urgent to know how many similar vulnerabilities exist in nowaday mobile services. But to the best of my knowledge, it is still unknown to the public.&lt;/p&gt;
+
+&lt;p&gt;The goal of our project is to generalize and scale up the sybil attack techniques and replace the work by automatic scripts. In this way, we can measure how many apps are exposed to those attacks and how the others defend against those attacks in a large scale manner. We take Android as our implementation platform.&lt;/p&gt;
+
+&lt;p&gt;The progress of this project till now:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;We explored the metadata of 2 million apps on Google Play Store and filtered out the apps which have the worst effect if been sybil attacked.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We leveraged hacking techniques to crawl app binaries for any desired operating system version and device edition without being banned by security measures that Google uses to prevent indexing Google Play Store content. We managed to download ~70,000 apps in 2 days with only a few resources.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We designed and implemented an automation tool called a &lt;i&gt;&lt;b&gt;Monkey&lt;/b&gt;&lt;/i&gt; that, given a mobile app binary, can automatically execute it to generate as much network traffic as possible by simulating user interaction (e.g. clicking a button, swiping a page, inputing texts, etc.).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We built up a super-parallel framework to test and do man-in-the-middle-attack on apps. When testing a single app for 30 minutes, the expected finish time for ~70,000 apps would be only a week.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:40%;float:left;padding-left:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/sybil-parallel.jpg&#34; alt=&#34;Parallel Testing Framework&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 1. Parallel Tesing Framework&lt;/center&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:40%;float:right;padding-right:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/sybil-proxy.jpg&#34; alt=&#34;Proxy Setting Up&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 2. Proxy Setting Up&lt;/center&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we are trying to find an effective way to separate out the app&amp;rsquo;s own API traffic with background traffic. And we are going to design classifiers to detect apps&amp;rsquo; defending techniques against sybil attacks and scripts to replay contextually modified traffic as a kind of sybil attacks.&lt;/p&gt;
+
+&lt;h1 id=&#34;author-contributions&#34;&gt;Author Contributions&lt;/h1&gt;
+
+&lt;p&gt;Advisor: &lt;a href=&#34;http://www.cs.ucsb.edu/~ravenben/&#34; target=&#34;_blank&#34;&gt;Ben Y. Zhao&lt;/a&gt;, Professor at UC Santa Barbara.&lt;/p&gt;
+
+&lt;p&gt;Zinan Lin solved the app crawling problem. Zinan Lin designed and implemented the Monkey script and the parallel testing framework under the supervision of &lt;a href=&#34;http://www.cs.ucsb.edu/~bolunwang/&#34; target=&#34;_blank&#34;&gt;Bolun Wang&lt;/a&gt;. &lt;a href=&#34;http://www.cs.ucsb.edu/~bolunwang/&#34; target=&#34;_blank&#34;&gt;Bolun Wang&lt;/a&gt; and Selena Huang designed the filter for interested apps. &lt;a href=&#34;http://www.cs.ucsb.edu/~bolunwang/&#34; target=&#34;_blank&#34;&gt;Bolun Wang&lt;/a&gt; is designing the classifier for traffic separation. &lt;a href=&#34;http://www.cs.ucsb.edu/~xyzhang/&#34;, target=&#34;_blank&#34;&gt;Xinyi Zhang&lt;/a&gt; provided some technical help on the project. &lt;a href=&#34;http://people.cs.vt.edu/~gangwang/&#34; target=&#34;_blank&#34;&gt;Gang Wang&lt;/a&gt; provided intellectual advice on the project.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:waze&#34;&gt;Wang, Gang, et al. &amp;ldquo;Defending against Sybil devices in crowdsourced mapping services.&amp;rdquo; &lt;i&gt;Proceedings of the 14th Annual International Conference on Mobile Systems, Applications, and Services.&lt;/i&gt; ACM, 2016.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:waze&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MOT&#43;: A Universal Platform for Multi-Object Tracking</title>
+      <link>http://zinanlin.me/publication/tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zinanlin.me/publication/tracking/</guid>
+      <description>
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;Multi-object tracking plays an important role in many computer vision tasks.&lt;/p&gt;
+
+&lt;p&gt;Within the multi-object algorithm framework, there are many topics that researchers focus on, such as the similarity measure and data association. Nowadays, if researchers want to test a new algorithm on a tiny focus, they need to implement the whole multi-object tracking framework. This kind of process has several drawbacks: 1) It slows down the  processes of developing and testing new algorithms. 2) Because of the different implementations in the rest part of the framework, it is difficult to fairly compare results of works on the same topic. 3) Different implementation patterns make it hard for other researchers to use the code on further research.&lt;/p&gt;
+
+&lt;p&gt;To address the problems above, I create a universal platform called MOT+ in which researchers can design, test and evaluate multi-object tracking algorithms easily and efficiently and users can construct a desired tracker just by simple configurations. Furthermore, I provide a reconstructed version of CMOT algorithm&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:CMOT&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:CMOT&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and a sample GUI program using MOT+.&lt;/p&gt;
+
+&lt;h1 id=&#34;details&#34;&gt;Details&lt;/h1&gt;
+
+&lt;p&gt;The platform is implemented as a matlab toolkit. The platform is designed in an object-oriented structure so that it can provide very detail interfaces for a specific algorithm while remains extensibility for further development. Noticing that many multi-object tracking algorithms can be abstracted into a clustering model, clustering the graph with nodes standing for detections and tracklets, we abstract the common procedures like clustering strategy and affinity strategy as components so that it is very easy to substitute one another and to do cross-comparison among different works.&lt;/p&gt;
+
+&lt;p&gt;The directory structure of MOT+ is shown below:&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:90%;margin:0px auto;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/toolkit-directory.png&#34; alt=&#34;toolkit-directory&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 1. The directory structure of MOT+&lt;/center&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;img style=&#34;display:inline;width:5%;vertical-align:text-bottom;margin:0px;padding:0px;&#34; src=&#34;http://zinanlin.me/img/projects/toolkit-folder.png&#34;/&gt; stands for a matlab toolkit folder with folder name on it and &lt;img style=&#34;display:inline;width:5%;vertical-align:text-bottom;margin:0px;padding:0px;&#34; src=&#34;http://zinanlin.me/img/projects/class-folder.png&#34;/&gt; stands for a matlab class folder with class name on it. The green arrows stand for the relationship of inheriting and the pink arrows stand for the relationship of invoking.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;videoSeq&lt;/code&gt; maintains the information of sequence being processed. &lt;code&gt;TBDtracker2D&lt;/code&gt; provides basic interfaces for 2D tracking-by-detection algorithms and provides result evaluation functions. &lt;code&gt;clusterMethod&lt;/code&gt; maintains the data structures and basic functions for the clustering abstraction mentioned above. It contains two components. One is the clustering strategy &lt;code&gt;trackingMain&lt;/code&gt; and the other is affinity strategy &lt;code&gt;affinity&lt;/code&gt;. When designing new algorithms, developers can inherit from &lt;code&gt;trackingMainBase&lt;/code&gt; and &lt;code&gt;affinityBase&lt;/code&gt; and just implement the call back functions. There are two kinds of affinity strategies being considered and need to be implemented. For convenience, users can implement the converter functions in &lt;code&gt;affinityAdapter&lt;/code&gt; which convert the two strategies to each other and in the future work, they can inherit from &lt;code&gt;affinityAdapter&lt;/code&gt; and just need to implement one affinity strategy. If more complicated tracker is needed, you can inherit from &lt;code&gt;videoSeq&lt;/code&gt;, &lt;code&gt;TBDtracker2D&lt;/code&gt; or &lt;code&gt;clusterMethod&lt;/code&gt; as you want.&lt;/p&gt;
+
+&lt;p&gt;It supports detection and groundtruth files in &lt;a href=&#34;https://motchallenge.net/data/2D_MOT_2015/&#34; target=&#34;_blank&#34;&gt;MOTChallenge&lt;/a&gt; format. If you want to use files in other formats, you can extend the interface in &lt;code&gt;TBDtracker2D&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;More details can be found in the documentation (Sorry that it was written in Chinese. I will upload the English edition not by far).&lt;/p&gt;
+
+&lt;h1 id=&#34;abstracting-cmot&#34;&gt;Abstracting CMOT&lt;/h1&gt;
+
+&lt;p&gt;I reconstruct CMOT algorithm under MOT+ and decompose it into one cluster strategy and three affinity strategies. You can test how CMOT works when removing one or two affinity strategies and even can use those components in your own algorithms easily. CMOT strategies are already included in the framework.&lt;/p&gt;
+
+&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
+
+&lt;p&gt;Here is a sample of using MOT+.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install MOT+.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;addpath(genpath(&#39;&amp;lt;root directory of MOT+&amp;gt;&#39;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set information of the sequence being tested.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;seqInfo.seqName = &#39;ADL-Rundle-6&#39;;
+seqInfo.seqPath = &#39;data\2DMOT2015\train\ADL-Rundle-6\img1&#39;;
+seqInfo.frameRate = 30;
+seqInfo.imgHeight = 1080;
+seqInfo.imgWidth = 1920;
+seqInfo.detPath = &#39;data\2DMOT2015\train\ADL-Rundle-6\det\det.txt&#39;;
+seqInfo.gtPath = &#39;data\2DMOT2015\train\ADL-Rundle-6\gt\gt.txt&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set user defined parameters.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;seqInfo.opt = CMOTParams;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set affinity strategies.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;seqInfo.affinityClasses = {...
+@framework.clusterMethod.affinity.affinity_motion, ...
+@framework.clusterMethod.affinity.affinity_appearance, ...
+@framework.clusterMethod.affinity.affinity_shape...
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set clustering strategy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;seqInfo.trackingMainClass = @framework.clusterMethod.trackingMain.trackingMain_cmot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set the callback function for combining affinity results.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;seqInfo.affinityCollectFunc = @prod;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Construct the tracker.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;tracker = framework.clusterMethod.clusterMethod(seqInfo);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Run the tracking algorithm.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;tracker.trackingMain();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display the tracking results.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;tracker.displayResult();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Evaluat the tracking results.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;tracker.evaluateResult();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;gui-sample&#34;&gt;GUI Sample&lt;/h1&gt;
+
+&lt;p&gt;Using MOT+, I implement a GUI program in which users can choose the strategy components easily and see the tracking results and groundtruth visually. Even, it can draw diagrams to show the comparing results between different combination of affinity strategies.&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    &lt;div style=&#34;width:45%;float:left;padding-left:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/tracking-interface.png&#34; alt=&#34;The Interface of GUI Sample&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 2. The Interface of GUI Sample&lt;/center&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;width:45%;float:right;padding-right:7%;&#34;&gt;
+        &lt;img src=&#34;http://zinanlin.me/img/projects/tracking-compare.png&#34; alt=&#34;Proxy Setting Up&#34; style=&#34;margin:0px;padding:0px;&#34;/&gt;
+        &lt;center style=&#34;font-size:65%;&#34;&gt;Figure 3. A Sample of Affinity Comparison Result (In total it supports 13 vital evaluating indicators)&lt;/center&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+&lt;br /&gt;
+It should be pointed out that &lt;code&gt;Public Dataset Folder&lt;/code&gt; must be in &lt;a href=&#34;https://motchallenge.net/data/2D_MOT_2015/&#34; target=&#34;_blank&#34;&gt;MOTChallenge&lt;/a&gt; dataset folder. You can download 2D MOT 2015 dataset &lt;a href=&#34;https://motchallenge.net/data/2DMOT2015.zip&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because tracking algorithm always takes a long time to run, this program will store the tracking result in a temporary file discriminated by the sequence name and configurations so that the next time the result can be displayed without running the tracking again. The tracking results for &lt;a href=&#34;https://motchallenge.net/data/2D_MOT_2015/&#34; target=&#34;_blank&#34;&gt;2D MOT 2015&lt;/a&gt; are already included in the source code. You can view the results directly.&lt;/p&gt;
+
+&lt;h1 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h1&gt;
+
+&lt;p&gt;MOT+ is developed based on &lt;a href=&#34;https://cvl.gist.ac.kr/cmot.html&#34; target=&#34;_blank&#34;&gt;CMOT&lt;/a&gt;, &lt;a href=&#34;https://bitbucket.org/amilan/contracking&#34; target=&#34;_blank&#34;&gt;Contracking&lt;/a&gt; and &lt;a href=&#34;https://motchallenge.net/devkit/&#34; target=&#34;_blank&#34;&gt;MOTChallenge Development Kit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;author-contributions&#34;&gt;Author Contributions&lt;/h1&gt;
+
+&lt;p&gt;Advisor: &lt;a href=&#34;http://media.au.tsinghua.edu.cn/xiangyangji.htm&#34; target=&#34;_blank&#34;&gt;Xiangyang Ji&lt;/a&gt;, Professor at Tsinghua University.&lt;/p&gt;
+
+&lt;p&gt;Zinan Lin finished the design and implementation work of this project. &lt;a href=&#34;http://scholar.harvard.edu/qguo&#34; target=&#34;_blank&#34;&gt;Qi Guo&lt;/a&gt; and Le Dan provided intellectual advice.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:CMOT&#34;&gt;Bae, Seung-Hwan, and Kuk-Jin Yoon. &amp;ldquo;Robust online multi-object tracking based on tracklet confidence and online discriminative appearance learning.&amp;rdquo; &lt;i&gt;2014 IEEE Conference on Computer Vision and Pattern Recognition.&lt;/i&gt; IEEE, 2014.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:CMOT&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
