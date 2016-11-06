@@ -175,16 +175,16 @@
 
 <h1 id="summary">Summary</h1>
 
-<p>The rapid growth of mobile services makes people connected with each other to a great extent. Especially, crowdsourcing services, which collect information and ideas from its online users rather than from employees or suppliers, and then present the results back to users, give us a lot of convenience. These services exist in many scenes, such as feedback on online shopping services, crowdvoting and online FAQ systems. However, systems that rely on crowdsourced data are inherently vulnerable to <i><b>sybil attacks</b></i>, creating a large number of fake users to disrupt the system. In a recent work, Wang explored the sybil attack vulnerability in Waze<sup class="footnote-ref" id="fnref:waze"><a rel="footnote" href="#fn:waze">1</a></sup>. Waze is real-time crowdsourced map service which provides timely information of road events such as traffic, congestion and accidents based on the GPS signal of all users. Wang introduced the techniques to emulate a large number of controlled virtual vehicles and generate any desired traffic events and finally get user re-routed by lightweight scripts. And attackers can even precisely track individual Waze users for the whole day without being noticed. Waze is extremely popular, with an estimated 50 million users. Because Google integrates selected crowdsourced data from Waze into its own map service, this attack can influence far more users.</p>
+<p>The rapid growth of mobile services makes people connected with each other to a great extent. Especially, crowdsourcing services, which collect information and ideas from its online users rather than from employees or suppliers, and then present the results back to users, give us a lot of convenience. These services exist in many scenes, such as feedback on online shopping services, crowdvoting and online FAQ systems. However, systems that rely on crowdsourced data are inherently vulnerable to <i><b>Sybil attacks</b></i>, creating a large number of fake users to disrupt the system. In a recent work, Wang explored the Sybil attack vulnerability in Waze<sup class="footnote-ref" id="fnref:waze"><a rel="footnote" href="#fn:waze">1</a></sup>. Waze is real-time crowdsourced map service which provides timely information of road events such as traffic, congestion and accidents based on the GPS signal of all users. Wang introduced the techniques to emulate a large number of controlled virtual vehicles and generate any desired traffic events and finally get user re-routed by lightweight scripts. And attackers can even precisely track individual Waze users for the whole day without being noticed. Waze is extremely popular, with an estimated 50 million users. Because Google integrates selected crowdsourced data from Waze into its own map service, this attack can influence far more users.</p>
 
-<p>As in Waze&rsquo;s example, such a small single sybil attack vulnerability can lead to a big damage. Therefore, it&rsquo;s urgent to know how many similar vulnerabilities exist in nowaday mobile services. But to the best of my knowledge, it is still unknown to the public.</p>
+<p>As in Waze&rsquo;s example, such a small single Sybil attack vulnerability can lead to a big damage. Therefore, it&rsquo;s urgent to know how many similar vulnerabilities exist in nowaday mobile services. But to the best of my knowledge, it is still unknown to the public.</p>
 
-<p>The goal of our project is to generalize and scale up the sybil attack techniques and replace the work by automatic scripts. In this way, we can measure how many apps are exposed to those attacks and how the others defend against those attacks in a large scale manner. We take Android as our implementation platform.</p>
+<p>The goal of our project is to generalize and scale up the Sybil attack techniques and replace the work by automatic scripts. In this way, we can measure how many apps are exposed to those attacks and how the others defend against those attacks in a large scale manner. We take Android as our implementation platform.</p>
 
 <p>The progress of this project till now:</p>
 
 <ul>
-<li><p>We explored the metadata of 2 million apps on Google Play Store and filtered out the apps which have the worst effect if been sybil attacked.</p></li>
+<li><p>We explored the metadata of 2 million apps on Google Play Store and filtered out the apps which have the worst effect if been Sybil attacked.</p></li>
 
 <li><p>We leveraged hacking techniques to crawl app binaries for any desired operating system version and device edition without being banned by security measures that Google uses to prevent indexing Google Play Store content. We managed to download ~70,000 apps in 2 days with only a few resources.</p></li>
 
@@ -206,7 +206,7 @@
 <div style="clear:both;"></div>
 <br /></p>
 
-<p>Now we are trying to find an effective way to separate out the app&rsquo;s own API traffic with background traffic. And we are going to design classifiers to detect apps&rsquo; defending techniques against sybil attacks and scripts to replay contextually modified traffic as a kind of sybil attacks.</p>
+<p>Now we are trying to find an effective way to separate out the app&rsquo;s own API traffic with background traffic. And we are going to design classifiers to detect apps&rsquo; defending techniques against Sybil attacks and scripts to replay contextually modified traffic as a kind of Sybil attacks.</p>
 
 <h1 id="author-contributions">Author Contributions</h1>
 
