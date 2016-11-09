@@ -188,7 +188,7 @@
 
 <li><p>We leveraged hacking techniques to crawl app binaries for any desired operating system version and device edition without being banned by security measures that Google uses to prevent indexing Google Play Store content. We managed to download ~70,000 apps in 2 days with only a few resources.</p></li>
 
-<li><p>We designed and implemented an automation tool called a <i><b>Monkey</b></i> that, given a mobile app binary, can automatically execute it to generate as much network traffic as possible by simulating user interaction (e.g. clicking a button, swiping a page, inputing texts, etc.).</p></li>
+<li><p>We designed and implemented an automation tool called a <i><b>Monkey</b></i> that, given a mobile app binary, can automatically execute it to generate as much network traffic as possible by simulating user interaction (e.g. clicking a button, swiping a page, inputing texts, etc.). According to our measurement, about 29% apps have a login requirement. However, none of previous work tried to solve this problem. Our approach can pass 50% login requests.</p></li>
 
 <li><p>We built up a super-parallel framework to test and do man-in-the-middle-attack on apps. When testing a single app for 30 minutes, the expected finish time for ~70,000 apps would be only a week.</p></li>
 </ul>
