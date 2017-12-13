@@ -60,7 +60,7 @@
     font-size: 8pt;
 }
 .win_tb_button_active {
-    background-image: url("/assets/img/checkerboard.png");
+    background-image: url($url + "/assets/img/checkerboard.png");
     border-bottom: 1px solid white;
     border-right: 1px solid white;
     border-top: 2px groove black;

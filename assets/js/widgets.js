@@ -1,3 +1,6 @@
+---
+---
+
 /*
 
 This is the JS file for the Windows widgets, which include
@@ -49,12 +52,12 @@ function makeWidget(icon, title, html, taskbar, min, ques, center, wid, hei, cus
     // determine Window control type
     if(min == true) {
         // minimize shown
-        var sec7 = '"><img src="/assets/img/min.png" class="win_titb_min" id"_"><img src="/assets/img/max_disabled.png" class="win_titb_max_dis" id"_"><img src="/assets/img/close.png" class="win_titb_close" id"_"></div></div>';
+        var sec7 = '"><img src="{{site.url}}/assets/img/min.png" class="win_titb_min" id"_"><img src="{{site.url}}/assets/img/max_disabled.png" class="win_titb_max_dis" id"_"><img src="{{site.url}}/assets/img/close.png" class="win_titb_close" id"_"></div></div>';
     } else {
         if(ques != true) { // No Question Mark
-            var sec7 = '"><img src="/assets/img/close.png" class="win_titb_close" id"_"></div></div>';
+            var sec7 = '"><img src="{{site.url}}/assets/img/close.png" class="win_titb_close" id"_"></div></div>';
         } else { // Question Mark Present
-            var sec7 = '"><img src="/assets/img/question.png" class="win_titb_question" id"_"><img src="/assets/img/close.png" class="win_titb_close" id"_"></div></div>';
+            var sec7 = '"><img src="{{site.url}}/assets/img/question.png" class="win_titb_question" id"_"><img src="{{site.url}}/assets/img/close.png" class="win_titb_close" id"_"></div></div>';
         }
     }
     // merge strings into one variable for insertion into DOM
@@ -98,10 +101,10 @@ function run(start) { // the run box
         });
     }
     // add in the run.js include into <head>
-    var runJsLink = $("<script src='/assets/js/run.js'>");
+    var runJsLink = $("<script src='{{site.url}}/assets/js/run.js'>");
     $("head").append(runJsLink);
     //html code below
-    var sec1 = '<div class="win_wid_run_tgt"></div><div id="win_wid_run_container"> <div id="win_wid_run_icondiv"> <img src="/assets/img/run_icon.png"> ';
+    var sec1 = '<div class="win_wid_run_tgt"></div><div id="win_wid_run_container"> <div id="win_wid_run_icondiv"> <img src="{{site.url}}/assets/img/run_icon.png"> ';
     var sec2 = '</div> <p id="win_wid_run_text"> Type the name of a program, folder, or document, and<br> ';
     var sec3 = 'Windows will open it for you. </p> <p id="win_wid_run_opent"> <span class="win_underline">O';
     var sec4 = '</span>pen: </p> <input type="text" id="win_wid_run_input" autofocus onkeyup="if(event.keyCode==13){runOK();}"> <button id="win_wid_run_obutton" onClick="runOK()" disabled autofocus>';
@@ -144,7 +147,7 @@ function runClose() {
 function winverStart() {
     var html1 = '<div class="win_wid_winver_tgt"></div><div id="win_wid_winver_container">';
     var html2 = '<span id="win_wid_winver_name" class="win_wid_winver_text">Windows 95</span>';
-    var html3 = '<img id="win_wid_winver_icon" src="/assets/img/winver_logo.png">';
+    var html3 = '<img id="win_wid_winver_icon" src="{{site.url}}/assets/img/winver_logo.png">';
     var html4 = '<span id="win_wid_winver_copy" class="win_wid_winver_text">Copyright &copy; 1981-1995, Microsoft Corp.</span>';
     var html5 = '<button id="win_wid_winver_ok" onclick="closeWinver()">OK</button></div>';
     var winverHTML = html1 + html2 + html3 + html4 + html5;
@@ -162,7 +165,7 @@ function closeWinver() {
 // ERROR MESSAGE FUNCTION
 function windowsError(icon, title, msg) {
     if (icon == 1) {
-        var iconURL = "/assets/img/error.png";
+        var iconURL = "{{site.url}}/assets/img/error.png";
     }
     var sec1 = '<div class="win_wid_error_tgt"></div><div class="win_wid_error_container">';
     var sec2 = '<div class="win_wid_error_concont"><div class="win_wid_error_icondiv"><img src="';

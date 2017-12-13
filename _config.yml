@@ -1,4 +1,5 @@
-url: #Your url here
+url: http://www.andrew.cmu.edu/user/zinanl
+#url: file:///E:/新笔记本%202017.2.12起/个人网站/fjxmlzn.github.io/_site
 #incremental: true
 
 # variables
@@ -55,4 +56,4 @@ defaults:
         scope:
             path: ""
         values:
-            icon: "/assets/img/file.ico"
+            icon: "http://www.andrew.cmu.edu/user/zinanl/assets/img/file.ico"

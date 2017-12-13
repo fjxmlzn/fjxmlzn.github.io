@@ -587,7 +587,7 @@ Pacman.Map = function (size) {
     }
     
     function reset() {       
-        map    = Pacman.MAP.clone();
+        map    = JSON.parse(JSON.stringify(Pacman.MAP));
         height = map.length;
         width  = map[0].length;        
     };
@@ -1252,7 +1252,7 @@ Pacman.WALLS = [
      {"line": [11.5, 10]}, {"curve": [11.5, 9.5, 11, 9.5]},
      {"line": [10.5, 9.5]}]
 ];
-
+/*
 Object.prototype.clone = function () {
     var i, newObj = (this instanceof Array) ? [] : {};
     for (i in this) {
@@ -1267,3 +1267,4 @@ Object.prototype.clone = function () {
     }
     return newObj;
 };
+*/

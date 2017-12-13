@@ -8,7 +8,7 @@ permalink: /games/index.html
 {% for game in site.games %}
 {% if game.title != "Games" %}
 * {{ game.title }}
-    * Link: [Click me!]({{ game.url }})
+    * Link: [Click me!]({{ site.url }}{{ game.url }})
     * Command: Run `{{ game.command }}` in Start->Run
 {% endif %}
 {% endfor %}

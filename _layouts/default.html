@@ -7,28 +7,28 @@
     <meta name="author" content="Zinan Lin (林梓楠)" /> 
     <meta name="description" content="Zinan Lin's homepage" /> 
     <meta name="keywords" content="Zinan Lin,PhD,CMU,Carnegie Mellon University,Tsinghua,Machine Learning,Security,Privacy" /> 
-    <link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/atom-one-light.css">
     {% if page.title %}
         <title>{{ site.name}} | {{page.title }}</title>
-        <link rel="stylesheet" type="text/css" href="/assets/css/002.css">
+        <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/002.css">
     {% else %}
         <title>{{ site.name }}</title>
-        <link rel="stylesheet" type="text/css" href="/assets/css/001.css">
+        <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/001.css">
     {% endif %}
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/win95.css">
-    <link rel="stylesheet" href="/assets/css/window.css">
-    <link rel="stylesheet" href="/assets/css/widgets.css">
-    <link rel="stylesheet" href="/assets/css/taskbar.css">
-    <link rel="stylesheet" href="/assets/css/start.css">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <script src="/assets/js/highlight.pack.js"></script>
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/jquery-ui.min.js"></script>
-    <script src="/assets/js/win95.js"></script>
-    <script src="/assets/js/clock.js"></script>
-    <script src="/assets/js/widgets.js"></script>
+    <link rel="stylesheet" href="{{site.url}}/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/win95.css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/window.css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/widgets.css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/taskbar.css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/start.css">
+    <link rel="shortcut icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
+    <script src="{{site.url}}/assets/js/highlight.pack.js"></script>
+    <script src="{{site.url}}/assets/js/jquery.js"></script>
+    <script src="{{site.url}}/assets/js/jquery-ui.min.js"></script>
+    <script src="{{site.url}}/assets/js/win95.js"></script>
+    <script src="{{site.url}}/assets/js/clock.js"></script>
+    <script src="{{site.url}}/assets/js/widgets.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
@@ -36,20 +36,20 @@
     {% assign current_collection = array[1] %}
     <div class="wrapper">
         <div class="default_title">
-            <img src="/assets/img/mycomputer.png" />
+            <img src="{{site.url}}/assets/img/mycomputer.png" />
             <h1>{{ site.name }}</h1>
         </div>
         {% include topbar.html %}
         <div class="tag_list">
             <ul id="tag-list">
-                <li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
+                <li><a href="{{site.url}}/" ><img src="{{site.url}}/assets/img/disk.png" />(C:)</a>
             <ul>
                 {% assign collections = site.collections | where_exp: "item", "item.label != 'posts'" | sort: "pos"%}
                 {% for collection in collections %}
                     {% if collection.label == current_collection %}
-                        <li class="hit"><a href="/{{collection.label}}" title="{{collection.name}}"><img src="/assets/img/folder.ico" />{{ collection.name }}</a></li>
+                        <li class="hit"><a href="{{site.url}}/{{collection.label}}" title="{{collection.name}}"><img src="{{site.url}}/assets/img/folder.ico" />{{ collection.name }}</a></li>
                     {% else %}
-                        <li><a href="/{{collection.label}}" title="{{collection.name}}"><img src="/assets/img/folder.ico" />{{ collection.name }}</a></li>
+                        <li><a href="{{site.url}}/{{collection.label}}" title="{{collection.name}}"><img src="{{site.url}}/assets/img/folder.ico" />{{ collection.name }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -60,9 +60,9 @@
             <ul>
                 {% for post in site[current_collection] %}
                     {% if post.id == page.id %}
-                        <li class="hit"><a href="{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
+                        <li class="hit"><a href="{{ site.url }}{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
                     {% else %}
-                        <li><a href="{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
+                        <li><a href="{{ site.url }}{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -81,7 +81,7 @@
             <div class="post_title">
                 <img src="{{ page.icon }}" />
                 <h1>{{  page.title  }}</h1>
-                <a href="/"><div class="close_button"></div></a>
+                <a href="{{site.url}}/"><div class="close_button"></div></a>
                 <!--<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
                 <div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
                 <div class="btn"><span class="fa fa-window-minimize"></span></div>
@@ -95,13 +95,13 @@
             </div>
         </div>
     {% endif %}
-    <script src="/assets/js/001.js"></script>
+    <script src="{{site.url}}/assets/js/001.js"></script>
 
     <!-- Taskbar -->
     <div id="win_taskbar">
         <!-- Start Button -->
         <div id="win_start_button">
-            <img src="/assets/img/start.png" id="win_start_icon" alt="Windows Logo">
+            <img src="{{site.url}}/assets/img/start.png" id="win_start_icon" alt="Windows Logo">
             <span id="win_start_text">Start</span>
         </div>
         <!-- Taskbar Buttons -->
@@ -110,7 +110,7 @@
         </div><!-- This is here to provide a target for the taskbar addition function -->
         <!--<div class="win_tb_button win_tb_button_inactive" id="win_tb_win_1">
             <div class="win_tb_icon">
-                <img src="/assets/img/start.png">
+                <img src="{{site.url}}/assets/img/start.png">
             </div>
             <div class="win_tb_text">
                 Inactive Window
@@ -118,7 +118,7 @@
         </div>
         <div class="win_tb_button win_tb_button_active" id="win_tb_win_2">
             <div class="win_tb_icon">
-                <img src="/assets/img/start.png">
+                <img src="{{site.url}}/assets/img/start.png">
             </div>
             <div class="win_tb_text">
                 Active Window
@@ -133,38 +133,38 @@
     <!-- Start Menu -->
     <div id="win_start">
         <div id="win_start_banner">
-            <img src="/assets/img/start_banner.png" alt="Windows 95" id="win_start_banner_img">
+            <img src="{{site.url}}/assets/img/start_banner.png" alt="Windows 95" id="win_start_banner_img">
         </div>
         <!-- Start Menu Top-level List -->
         <div id="win_start_tli_cont">
             <!-- Programs -->
             <div id="win_start_tli_programs" class="win_start_toplevel_item">
-                <img src="/assets/img/programs24.png" alt="Programs" class="win_start_tliicon">
+                <img src="{{site.url}}/assets/img/programs24.png" alt="Programs" class="win_start_tliicon">
                 <span class="win_start_tlitext"><u>P</u>rograms</span>
             </div>
             <!-- Documents -->
             <div id="win_start_tli_documents" class="win_start_toplevel_item">
-                <img src="/assets/img/documents24.png" alt="Documents" class="win_start_tliicon">
+                <img src="{{site.url}}/assets/img/documents24.png" alt="Documents" class="win_start_tliicon">
                 <span class="win_start_tlitext"><u>D</u>ocuments</span>
             </div>
             <!-- Settings -->
             <div id="win_start_tli_settings" class="win_start_toplevel_item">
-                <img src="/assets/img/settings24.png" alt="Settings" class="win_start_tliicon">
+                <img src="{{site.url}}/assets/img/settings24.png" alt="Settings" class="win_start_tliicon">
                 <span class="win_start_tlitext"><u>S</u>ettings</span>
             </div>
             <!-- Find -->
             <div id="win_start_tli_find" class="win_start_toplevel_item">
-                <img src="/assets/img/find24.png" alt="Find" class="win_start_tliicon">
+                <img src="{{site.url}}/assets/img/find24.png" alt="Find" class="win_start_tliicon">
                 <span class="win_start_tlitext"><u>F</u>ind</span>
             </div>
             <!-- Help -->
             <div id="win_start_tli_help" class="win_start_toplevel_item">
-                <img src="/assets/img/help24.png" alt="Help" class="win_start_tliicon">
+                <img src="{{site.url}}/assets/img/help24.png" alt="Help" class="win_start_tliicon">
                 <span class="win_start_tlitext"><u>H</u>elp</span>
             </div>
             <!-- Run -->
             <div id="win_start_tli_run" class="win_start_toplevel_item" onClick="run(true)">
-                <img src="/assets/img/run24.png" alt="Run..." class="win_start_tliicon">
+                <img src="{{site.url}}/assets/img/run24.png" alt="Run..." class="win_start_tliicon">
                 <span class="win_start_tlitext"><u>R</u>un...</span>
             </div>
             <!-- Divider -->
@@ -174,7 +174,7 @@
             </div>
             <!-- Shut Down -->
             <div id="win_start_tli_shutdown" class="win_start_toplevel_item">
-                <img src="/assets/img/shutdown24.png" alt="Shut Down..." class="win_start_tliicon">
+                <img src="{{site.url}}/assets/img/shutdown24.png" alt="Shut Down..." class="win_start_tliicon">
                 <span class="win_start_tlitext">Sh<u>u</u>t Down...</span>
             </div>
         </div>

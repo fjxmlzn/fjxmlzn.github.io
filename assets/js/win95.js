@@ -1,3 +1,6 @@
+---
+---
+
 /*
 	--- NOTES ---
 
@@ -20,7 +23,7 @@ $( document ).ready(function(){
     /* Environment Setup Functions */
     //console.log("Window Creation Syntax: makeWindow('Icon URL', 'Window Title', 'iFrame URL', Taskbar Boolean, Resize Boolean, Width, Height);");
     if(returnBrowserEngine() == "webkit") { // add webkit/blink only functions here
-        $('head').append('<link rel="stylesheet" type="text/css" href="/assets/css/webkit.css">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/webkit.css">');
     }
     // #win-container setup - height
         //var winHeight = $(window).height();
@@ -49,9 +52,9 @@ $( document ).ready(function(){
     /* minimize, maximize, close buttons */
     // MINIMIZE BUTTON
     $( "#win_container" ).on('mousedown','.win_titb_min', function() {
-        $( this ).attr("src", "/assets/img/min_dep.png");
+        $( this ).attr("src", "{{site.url}}/assets/img/min_dep.png");
         $( this ).mouseup(function() {
-            $( this ).attr("src", "/assets/img/min.png");
+            $( this ).attr("src", "{{site.url}}/assets/img/min.png");
             var windc_id = $( this ).parent().attr("id");
             var windc_id_splt = windc_id.split("_");
             var win_id = windc_id_splt[2];
@@ -63,9 +66,9 @@ $( document ).ready(function(){
     });
     // MAXIMIZE BUTTON
     $( "#win_container" ).on('mousedown','.win_titb_max', function() {
-        $( this ).attr("src", "/assets/img/max_dep.png");
+        $( this ).attr("src", "{{site.url}}/assets/img/max_dep.png");
         $( this ).mouseup(function() {
-            $( this ).attr("src", "/assets/img/max.png");
+            $( this ).attr("src", "{{site.url}}/assets/img/max.png");
             var windc_id = $( this ).parent().attr("id");
             var windc_id_splt = windc_id.split("_");
             var win_id = windc_id_splt[2];
@@ -76,9 +79,9 @@ $( document ).ready(function(){
     });
     // CLOSE BUTTON
     $( "#win_container" ).on('mousedown','.win_titb_close', function() {
-        $( this ).attr("src", "/assets/img/close_dep.png");
+        $( this ).attr("src", "{{site.url}}/assets/img/close_dep.png");
         $( this ).mouseup(function() {
-            $( this ).attr("src", "/assets/img/close.png");
+            $( this ).attr("src", "{{site.url}}/assets/img/close.png");
             var windc_id = $( this ).parent().attr("id");
             //alert(windc_id);
             var windc_id_splt = windc_id.split("_");
@@ -194,13 +197,13 @@ function makeWindow(icon, title, frameurl, taskbar, res, wid, hei) { /* IT WORKS
     var sec6 = '</div><div class="win_titb_controls" id="win_windc_'
     // determine Window control type
     if(res != false && taskbar != false) { // all buttons
-        var sec7 = '"><img src="/assets/img/min.png" class="win_titb_min" id"_"><img src="/assets/img/max.png" class="win_titb_max" id"_"><img src="/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
+        var sec7 = '"><img src="{{site.url}}/assets/img/min.png" class="win_titb_min" id"_"><img src="{{site.url}}/assets/img/max.png" class="win_titb_max" id"_"><img src="{{site.url}}/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
     } else if(res == false && taskbar == false) { // only close
-        var sec7 = '"><img src="/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
+        var sec7 = '"><img src="{{site.url}}/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
     } else if (res == false) { // max. shaded out
-        var sec7 = '"><img src="/assets/img/min.png" class="win_titb_min" id"_"><img src="/assets/img/max_disabled.png" class="win_titb_max_dis" id"_"><img src="/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
+        var sec7 = '"><img src="{{site.url}}/assets/img/min.png" class="win_titb_min" id"_"><img src="{{site.url}}/assets/img/max_disabled.png" class="win_titb_max_dis" id"_"><img src="{{site.url}}/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
     } else if (taskbar == false) { // no minimize button
-        var sec7 = '"><img src="/assets/img/max.png" class="win_titb_max" id"_"><img src="/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
+        var sec7 = '"><img src="{{site.url}}/assets/img/max.png" class="win_titb_max" id"_"><img src="{{site.url}}/assets/img/close.png" class="win_titb_close" id"_"></div></div></div>';
     }
     //var sec8 = '<iframe class="win_window_iframe" src="' + frameurl + '" id="win_window_' + window_set + '_iframe"></div>';
     // merge strings into one variable for insertion into DOM
@@ -270,7 +273,7 @@ function addTaskbar(win_id, icon, title) {
         var insertHTML = sec1 + win_id + sec2 + icon + sec3 + title + sec4;
     } else {
         // icon not present
-        var placeholder = "/assets/img/placeholder.png";
+        var placeholder = "{{site.url}}/assets/img/placeholder.png";
         var sec1 = '<div class="win_tb_button" id="win_tb_win_';
         var sec2 = '"><div class="win_tb_icon_noicon"><img src="';
         var sec3 = '"></div><div class="win_tb_text_noicon">';

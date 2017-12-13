@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: #008082 url(/assets/img/windows95_small.png) no-repeat;
+    background: #008082 url($url + "/assets/img/windows95_small.png") no-repeat;
     background-position: 60%, 50%;
     font-family: sans-serif, serif, monospace;
     font-size: 13px;
@@ -46,7 +46,7 @@ body {
     float: right;
     width: 16px;
     height: 14px;
-    background: url(/assets/img/close.png) no-repeat;
+    background: url($url + "/assets/img/close.png") no-repeat;
 }
 
 .close_button:active {
@@ -54,7 +54,7 @@ body {
     float: right;
     width: 16px;
     height: 14px;
-    background: url(/assets/img/close_dep.png) no-repeat;
+    background: url($url + "/assets/img/close_dep.png") no-repeat;
 }
 
 .default_title, .post_title {
@@ -215,7 +215,7 @@ ul.topbar {
     }
 }
 #tag-list {
-    background:transparent url(/assets/img/pixel-alt.png) repeat-y 15px 0;
+    background:transparent url($url + "/assets/img/pixel-alt.png") repeat-y 15px 0;
 }
 #tag-list li {
     padding:0 0 0 2px;
@@ -225,7 +225,7 @@ ul.topbar {
     display:block;
 }
 #tag-list li ul li {
-    background:transparent url(/assets/img/pixel-alt.png) repeat-x 0 8px;
+    background:transparent url($url + "/assets/img/pixel-alt.png") repeat-x 0 8px;
     margin:4px 0 4px 13px;
     padding:4px 0 4px 20px;
 }
@@ -389,7 +389,7 @@ ul.topbar {
       width: 16px;
 } /* this targets the default scrollbar (compulsory) */
 ::-webkit-scrollbar-track {
-    background-image: url("/assets/img/track.png");
+    background-image: url($url + "/assets/img/track.png");
     background-repeat: repeat-x repeat-y;
 } /* the new scrollbar will have a flat appearance with the set background color */
  
@@ -409,19 +409,19 @@ ul.topbar {
     background-repeat: no-repeat;
 
     &:vertical:decrement {
-        background-image: url("/assets/img/up.png");
+        background-image: url($url + "/assets/img/up.png");
     }
 
     &:vertical:increment {
-        background-image: url("/assets/img/down.png");
+        background-image: url($url + "/assets/img/down.png");
     }
 
     &:horizontal:decrement {
-        background-image: url("/assets/img/left.png");
+        background-image: url($url + "/assets/img/left.png");
     }
 
     &:horizontal:increment {
-        background-image: url("/assets/img/right.png");
+        background-image: url($url + "/assets/img/right.png");
     }
 
     &:active {
