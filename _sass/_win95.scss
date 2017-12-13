@@ -1,0 +1,30 @@
+body, html {
+    background-color: #008080;
+    margin: 0px;
+}
+#win_container {
+
+}
+#win_overlay {
+
+}
+.win_titlebar,
+.win_titb_text,
+.win_titb_icon,
+#win_wid_run_container,
+#win_wid_debug_container,
+#win_wid_winver_container,
+.win_wid_container,
+#win_taskbar,
+#win_start,
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.win_underline {
+    text-decoration: underline;
+}

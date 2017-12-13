@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="author" content="Zinan Lin (林梓楠)" /> 
+    <meta name="description" content="Zinan Lin's homepage" /> 
+    <meta name="keywords" content="Zinan Lin,PhD,CMU,Carnegie Mellon University,Tsinghua,Machine Learning,Security,Privacy" /> 
+    <link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    {% if page.title %}
+        <title>{{ site.name}} | {{page.title }}</title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/002.css">
+    {% else %}
+        <title>{{ site.name }}</title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/001.css">
+    {% endif %}
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/win95.css">
+    <link rel="stylesheet" href="/assets/css/window.css">
+    <link rel="stylesheet" href="/assets/css/widgets.css">
+    <link rel="stylesheet" href="/assets/css/taskbar.css">
+    <link rel="stylesheet" href="/assets/css/start.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <script src="/assets/js/highlight.pack.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/win95.js"></script>
+    <script src="/assets/js/clock.js"></script>
+    <script src="/assets/js/widgets.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    {% assign array = page.id | split: "/"%}
+    {% assign current_collection = array[1] %}
+    <div class="wrapper">
+        <div class="default_title">
+            <img src="/assets/img/mycomputer.png" />
+            <h1>{{ site.name }}</h1>
+        </div>
+        {% include topbar.html %}
+        <div class="tag_list">
+            <ul id="tag-list">
+                <li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
+            <ul>
+                {% assign collections = site.collections | where_exp: "item", "item.label != 'posts'" | sort: "pos"%}
+                {% for collection in collections %}
+                    {% if collection.label == current_collection %}
+                        <li class="hit"><a href="/{{collection.label}}" title="{{collection.name}}"><img src="/assets/img/folder.ico" />{{ collection.name }}</a></li>
+                    {% else %}
+                        <li><a href="/{{collection.label}}" title="{{collection.name}}"><img src="/assets/img/folder.ico" />{{ collection.name }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="post_list">
+            <ul>
+                {% for post in site[current_collection] %}
+                    {% if post.id == page.id %}
+                        <li class="hit"><a href="{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
+                    {% else %}
+                        <li><a href="{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="post_total">
+            {% if current_collection %}
+                <div class="left">{{ site[current_collection] | size }} object(s)</div>
+            {% else %}
+                <div class="left">{{ site.collections | where_exp: "item", "item.label != 'posts'" | size }} object(s)</div>
+            {% endif %}
+            <div class="right">&nbsp;</div>
+        </div>
+    </div>
+    {% if page.title %}
+        <div class="content">
+            <div class="post_title">
+                <img src="{{ page.icon }}" />
+                <h1>{{  page.title  }}</h1>
+                <a href="/"><div class="close_button"></div></a>
+                <!--<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
+                <div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
+                <div class="btn"><span class="fa fa-window-minimize"></span></div>
+                -->
+            </div>
+            <ul class="topbar">
+                <li>Last updated: {{ site.time | date: '%B %-d, %Y' }}</li>
+            </ul>
+            <div class="post_content">
+                {{ content }}
+            </div>
+        </div>
+    {% endif %}
+    <script src="/assets/js/001.js"></script>
+
+    <!-- Taskbar -->
+    <div id="win_taskbar">
+        <!-- Start Button -->
+        <div id="win_start_button">
+            <img src="/assets/img/start.png" id="win_start_icon" alt="Windows Logo">
+            <span id="win_start_text">Start</span>
+        </div>
+        <!-- Taskbar Buttons -->
+        <div id="win_tb_placeholder">
+        
+        </div><!-- This is here to provide a target for the taskbar addition function -->
+        <!--<div class="win_tb_button win_tb_button_inactive" id="win_tb_win_1">
+            <div class="win_tb_icon">
+                <img src="/assets/img/start.png">
+            </div>
+            <div class="win_tb_text">
+                Inactive Window
+            </div>
+        </div>
+        <div class="win_tb_button win_tb_button_active" id="win_tb_win_2">
+            <div class="win_tb_icon">
+                <img src="/assets/img/start.png">
+            </div>
+            <div class="win_tb_text">
+                Active Window
+            </div>
+        </div>-->
+        
+        <!-- System Tray -->
+        <div id="win_systray">
+            <span id="win_clock">&nbsp;</span>
+        </div>
+    </div>
+    <!-- Start Menu -->
+    <div id="win_start">
+        <div id="win_start_banner">
+            <img src="/assets/img/start_banner.png" alt="Windows 95" id="win_start_banner_img">
+        </div>
+        <!-- Start Menu Top-level List -->
+        <div id="win_start_tli_cont">
+            <!-- Programs -->
+            <div id="win_start_tli_programs" class="win_start_toplevel_item">
+                <img src="/assets/img/programs24.png" alt="Programs" class="win_start_tliicon">
+                <span class="win_start_tlitext"><u>P</u>rograms</span>
+            </div>
+            <!-- Documents -->
+            <div id="win_start_tli_documents" class="win_start_toplevel_item">
+                <img src="/assets/img/documents24.png" alt="Documents" class="win_start_tliicon">
+                <span class="win_start_tlitext"><u>D</u>ocuments</span>
+            </div>
+            <!-- Settings -->
+            <div id="win_start_tli_settings" class="win_start_toplevel_item">
+                <img src="/assets/img/settings24.png" alt="Settings" class="win_start_tliicon">
+                <span class="win_start_tlitext"><u>S</u>ettings</span>
+            </div>
+            <!-- Find -->
+            <div id="win_start_tli_find" class="win_start_toplevel_item">
+                <img src="/assets/img/find24.png" alt="Find" class="win_start_tliicon">
+                <span class="win_start_tlitext"><u>F</u>ind</span>
+            </div>
+            <!-- Help -->
+            <div id="win_start_tli_help" class="win_start_toplevel_item">
+                <img src="/assets/img/help24.png" alt="Help" class="win_start_tliicon">
+                <span class="win_start_tlitext"><u>H</u>elp</span>
+            </div>
+            <!-- Run -->
+            <div id="win_start_tli_run" class="win_start_toplevel_item" onClick="run(true)">
+                <img src="/assets/img/run24.png" alt="Run..." class="win_start_tliicon">
+                <span class="win_start_tlitext"><u>R</u>un...</span>
+            </div>
+            <!-- Divider -->
+            <div class="win_start_divider">
+                <div class="win_start_d1"></div>
+                <div class="win_start_d2"></div>
+            </div>
+            <!-- Shut Down -->
+            <div id="win_start_tli_shutdown" class="win_start_toplevel_item">
+                <img src="/assets/img/shutdown24.png" alt="Shut Down..." class="win_start_tliicon">
+                <span class="win_start_tlitext">Sh<u>u</u>t Down...</span>
+            </div>
+        </div>
+    </div>    
+    <div id="win_container">
+        <div id="win_placeholder"></div><!-- This is here to provide a target for the window creation function -->
+    </div>
+    <div id="win_overlay">
+    </div>
+    {% include cnzz_analytics.html %}
+    {% include google_analytics.html %}
+</body>
+</html>

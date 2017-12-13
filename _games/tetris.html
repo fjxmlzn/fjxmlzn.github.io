@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Tetris"
+icon: "tetris/tetris.icon.png"
+command: "tetris"
+---
+
+<style type="text/css">
+.game {
+    margin: auto;
+    height: 100%;
+}
+</style>
+
+<div class="game"></div>
+<br />
+<hr />
+Code adapted from https://github.com/Aerolab/blockrain.js, under <a href="https://github.com/Aerolab/blockrain.js/blob/gh-pages/LICENSE.txt" target="_blank">MIT License</a>.
+
+<link rel="stylesheet" href="tetris/blockrain.css">
+
+<!-- jQuery and Blockrain.js -->
+<script src="tetris/blockrain.jquery.min.js"></script>
+<script>
+    resize = function() {
+        $(".game").width($(".game").height() * 0.6);
+    }
+    resize();
+    window.onresize = resize;
+    $('.game').blockrain();
+</script>

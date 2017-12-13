@@ -1,0 +1,58 @@
+url: #Your url here
+#incremental: true
+
+# variables
+name: Zinan Lin's homepage
+description: Zinan Lin's homepage
+google_verification: null
+
+
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE"]
+
+# Sass
+sass:
+    style: :compressed
+    sass_dir: _sass
+
+# Markdown
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter_opts:
+        disable : true
+    
+# Collections
+collections:
+    bio:
+        output: true
+        name: Biography
+        pos: 1
+    honors:
+        output: true
+        name: Honors
+        pos: 2
+    publications:
+        output: true
+        name: Publications
+        pos: 3
+    cv:
+        output: true
+        name: CV
+        pos: 4
+    games:
+        output: true
+        name: Games
+        pos: 5
+    about:
+        output: true
+        name: About
+        pos: 100
+    
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            icon: "/assets/img/file.ico"

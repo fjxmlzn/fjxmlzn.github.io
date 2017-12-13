@@ -1,0 +1,312 @@
+/*
+ * «Copyright 2013 Jose F. Maldonado»
+ *
+ * This file is part of Histrix.
+ *
+ *  Histrix is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Histrix is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Histrix. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
+img.icon {
+    top: 2px;
+    position: relative;
+}
+        
+/* ----- Contenedores ----- */
+
+#HistrixCalculator
+	{
+	width: 450px;
+	margin: 0 auto;
+	font-size: 9pt;
+	text-align: center;
+	font-family: helvetica;
+	border: 1px solid #000080;
+	background-color: #ececec;
+	position: relative;
+    box-shadow: 4px 4px 2px #888;
+    -webkit-box-shadow: 4px 4px 2px #888;
+    -moz-box-shadow: 4px 4px 2px #888;
+	}
+
+#HistrixCalculator div.up
+	{ padding: 3px; }
+
+#HistrixCalculator div.header
+	{
+	color: white;
+	font-size: 9pt;
+	font-weight: bold;
+	font-family: Arial;
+	background-color: #000080;
+	padding: 4px;
+	position: relative;
+	}
+
+#HistrixCalculator div.down div.right
+	{
+	float: right;
+	width: 280px;
+	}
+
+#HistrixCalculator div.down div.left
+	{
+	float: left;
+	width: 164px;
+	}
+
+
+#HistrixCalculator div.up div.right_side
+	{
+	float: right;
+	width: 235px;
+	padding: 3px 0;
+	}
+
+#HistrixCalculator div.up div.left_side
+	{
+	float: left;
+	width: 195px;
+	padding: 3px 0;
+	}
+
+#HistrixCalculator div.left_column
+	{
+	width: 40px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+
+#HistrixCalculator .row
+	{
+	margin-left: 5px;
+	}
+
+#HistrixCalculator .inv_hyp_column
+	{
+	float: left;
+	width: 113px;
+	padding: 5px 0;
+	margin-top: 2px;
+	margin-left: 3px;
+	margin-right: 2px;
+	border: 1px solid #c0c0c0;
+	}
+
+#HistrixCalculator_stadistics
+	{
+	width: 250px;
+	padding: 5px;
+	bottom: -125px;
+	position: absolute;
+	border: 1px solid green;
+	background-color: #b0ffb0;
+	}
+
+/* ----- Varios ----- */
+
+#HistrixCalculator input.display
+	{
+	width: 98%;
+	text-align: right;
+	}
+
+#HistrixCalculator div.help
+	{
+	top: 2px;
+	left: 1px;
+	position: absolute;
+	}
+        
+#HistrixCalculator div.mode
+	{
+	top: 1px;
+	right: 1px;
+	position: absolute;
+	}
+
+#HistrixCalculator div.mode select,
+#HistrixCalculator div.mode option
+	{ font-size: 8pt; }
+
+
+/* ----- Botones ----- */
+
+#HistrixCalculator a.button
+	{
+	text-align: center;
+	text-decoration: none;
+	}
+
+#HistrixCalculator .square,
+#HistrixCalculator .rectangle
+	{
+	float: left;
+	margin: 3px;
+	display: block;
+	border: 1px solid #808080;
+	background-color: #e0e0e0;
+	}
+
+#HistrixCalculator a.square,
+#HistrixCalculator a.rectangle
+	{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	/*text-shadow: 0 1px 1px rgba(0,0,0,.3);*/
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background-color: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
+    background: -moz-linear-gradient(top,  #fff,  #e0e0e0);
+	}
+
+#HistrixCalculator a.button:hover
+	{
+	background-color: #f0f0c0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f0f0c0));
+    background: -moz-linear-gradient(top,  #fff,  #f0f0f0);
+	}
+
+#HistrixCalculator a.button:active
+	{
+	background-color: #e0e0e0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#ffffff));
+    background: -moz-linear-gradient(top,  #e0e0e0,  #ffffff);
+	}
+        
+#HistrixCalculator .square
+	{
+	width: 30px;
+	line-height: 26px;
+	}
+
+#HistrixCalculator .rectangle
+	{
+	width: 68px;
+	line-height: 26px;
+	}
+
+#HistrixCalculator a.red
+	{ color: red; }
+
+#HistrixCalculator a.blue
+	{ color: blue; }
+
+#HistrixCalculator a.fuchsia
+	{ color: fuchsia; }
+
+#HistrixCalculator .square input
+	{
+	width: 100%;
+	margin-top: 3px;
+	text-align: center;
+	border: 0px solid #e0e0e0;
+	background-color: #e0e0e0;
+	}
+
+#HistrixCalculator span.square
+	{ height: 28px; }
+
+#HistrixCalculator span.label
+	{
+        bottom: 1px;
+	position: relative;
+	}
+        
+/* ----- Help ---- */
+
+#div_help {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 10pt;
+    margin-top: 50px;
+    padding-top: 40px;
+    font-family: Arial;
+    border-top: 1px solid gray;
+}
+
+#div_help table.guide {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#div_help table.guide td.column {
+    padding: 3px;
+    width: 320px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#div_help table.button_group {
+    width: 314px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 2px solid #808080;
+    background-color: #f0f0f0;
+}
+
+#div_help table.button_group td {
+    padding: 3px;
+    vertical-align: top;
+}
+
+#div_help table.button_group td.button {
+    text-align: right;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#div_help table.button_group td.red {
+    color: red;
+}
+
+#div_help table.button_group td.blue {
+    color: blue;
+}
+
+#div_help table.button_group td.violet {
+    color: magenta;
+}
+
+#div_help table.button_group td.definition {
+    text-align: left;
+    font-weight: normal;
+}
+
+#div_help div.license {
+    color: #404040;
+    width: 600px;
+    font-size: 9pt;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana;
+    border-top: 1px solid gray;
+}
+
+#div_help div.license em {
+    color: #ff6640;
+    font-style: normal;
+}
+
+#div_help div.license a {
+    text-decoration: none;
+}

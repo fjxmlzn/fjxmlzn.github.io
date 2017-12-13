@@ -1,0 +1,185 @@
+/*
+
+WARNING: All CSS in this document will run ROOT LEVEL in the emulator.
+         You MUST prefix your selectors with win_wid_<NAME>_
+
+*/
+
+/*
+.win_titlebar,
+.win_titb_text,
+.win_titb_icon,
+#win_wid_run_container,
+#win_taskbar,
+#win_start,
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.win_underline {
+    text-decoration: underline;
+}
+*/
+.win_widget {
+    border-image-slice: 4 4 4 4;
+    border-image-width: 4px 4px 4px 4px;
+    border-image-outset: 4px 4px 4px 4px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("/assets/img/border.png");
+    /*display: none;*/
+    position: absolute !important; /* must be important because jQuery UI will set it to rel and bad things will happen */
+}
+/* THE RUN DIALOG */
+.win_wid_run_dialog {
+    /*left: 8px !important;
+    bottom: 8px !important;*/
+    position: absolute !important;    
+    border-image-slice: 4 4 4 4;
+    border-image-width: 4px 4px 4px 4px;
+    border-image-outset: 4px 4px 4px 4px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("/assets/img/border.png");
+    /*display: none;*/
+    position: absolute !important; /* must be important because jQuery UI will set it to rel and bad things will happen */
+    left: 8px;
+    bottom: 8px !important;
+    padding: 0px;
+}
+#win_wid_run_tgt {
+    width: 0px;
+    height: 0px;
+}
+#win_wid_run_container {
+    width: 100%;
+    height: 100%;
+    background-color: #C0C0C0;
+    cursor: default;
+}
+#win_wid_run_icondiv {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 19px;
+    left: 12px;
+}
+#win_wid_run_text {
+    font-family: "Microsoft Sans Serif";
+    font-size: 8pt;
+    position: absolute;
+    left: 52px;
+    top: 22px;
+}
+#win_wid_run_opent {
+    position: absolute;
+    font-family: "Microsoft Sans Serif";
+    font-size: 8pt;
+    top: 68px;
+    left: 12px;
+}
+#win_wid_run_input {
+    position: absolute;
+    width: 272px;
+    right: 12px;
+    top: 66px;
+}
+#win_wid_run_obutton {
+    position: absolute;
+    width: 75px;
+    height: 23px;
+    right: 174px;
+    bottom: 14px;
+    font-family: "Microsoft Sans Serif";
+    font-size: 8pt;
+}
+.win_wid_run_cbutton {
+    position: absolute;
+    width: 75px;
+    height: 23px;
+    right: 93px;
+    bottom: 14px;
+    font-family: "Microsoft Sans Serif";
+    font-size: 8pt;
+}
+.win_wid_run_bbutton {
+    position: absolute;
+    height: 23px;
+    width: 75px;
+    right: 12px;
+    bottom: 14px;
+    font-family: "Microsoft Sans Serif";
+    font-size: 8pt;
+}
+/* WINVER DIALOG */
+#win_wid_winver_container {
+    width: 100%;
+    height: 100%;
+    background-color: #C0C0C0;
+    cursor: default;
+}
+.win_wid_winver_text {
+    position: absolute;
+    font-family: "Microsoft Sans Serif";
+    font-size: 8pt;
+    width: 100%;
+    text-align: center;
+}
+#win_wid_winver_name {
+    top: 11px;
+}
+#win_wid_winver_icon {
+    position: absolute;
+    left: 141px;
+    top: 36px;
+}
+#win_wid_winver_copy {
+    top: 79px;
+}
+#win_wid_winver_ok {
+    position: absolute;
+    width: 48px;
+    height: 26px;
+    bottom: 8px;
+    left: 126px;
+}
+/* error dialog */
+.win_wid_error_container {
+    width: 100%;
+    height: 100%;
+    background-color: #C0C0C0;
+    cursor: default;
+    position: absolute;
+}
+.win_wid_error_contcon {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+.win_wid_error_icondiv {
+    
+}
+.win_wid_error_icon {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+}
+.win_wid_error_text {
+    height: 100%;
+    padding-left: 62px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Microsoft Sans Serif";
+    font-size: 8pt;
+    word-wrap: normal;
+}
+.win_wid_error_buttoncont {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}

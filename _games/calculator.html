@@ -1,0 +1,188 @@
+---
+layout: default
+title: "Calculator"
+icon: "calculator/calculator.icon.png"
+command: "calc"
+---
+
+<link rel="stylesheet" href="calculator/css/HistrixCalculator.css" type="text/css"/>
+
+<!--<script type="text/javascript" src="calculator/js/jquery-1.4.2.min.js"></script>-->
+<script type="text/javascript" src="calculator/js/HistrixCalculator.js"></script>
+<script type="text/javascript" src="calculator/js/HistrixCalculator.handlers.js"></script>
+<script type="text/javascript" src="calculator/js/HistrixCalculator.math.js"></script>
+<script type="text/javascript" src="calculator/js/HistrixCalculator.display.js"></script>
+<script type="text/javascript" src="calculator/js/Init.js"></script>
+
+<form action="" method="post">
+    <div id="HistrixCalculator">
+        <!-- Title -->
+        <div class="header">
+            <div class="help">
+                <img src="calculator/icon/histrix.png" alt="" title="Histrix Calculator"/>
+            </div>
+            Histrix
+            <div class="mode">
+                <select name="mode">
+                    <option value="standard">Standard</option>
+                    <option value="scientific">Scientific</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Display -->
+        <div class="up">
+            <input type="text" name="display" value="" readonly="readonly" class="display"/>
+        </div>
+
+        <!-- Bases -->
+        <div class="up scientific">
+            <div class="left_side">
+                <input type="radio" name="base" value="hexadecimal"/><span class="label">Hex &nbsp;</span>
+                <input type="radio" name="base" value="decimal" checked="checked"/><span class="label">Dec &nbsp;</span>
+                <input type="radio" name="base" value="octal"/><span class="label">Oct &nbsp;</span>
+                <input type="radio" name="base" value="binary"/><span class="label">Bin</span>
+            </div>
+
+            <div class="right_side">
+                <span class="decimal">
+                    <input type="radio" name="metric" value="degrees"/><span class="label">Degrees &nbsp;</span>
+                    <input type="radio" name="metric" value="radians" checked="checked"/><span class="label">Radians &nbsp;</span>
+                    <input type="radio" name="metric" value="grads"/><span class="label">Grads</span>
+                </span>
+                <span class="hexadecimal octal binary">
+                    <input type="radio" name="range" value="qword" checked="checked"/><span class="label">Qword &nbsp;</span>
+                    <input type="radio" name="range" value="dword"/><span class="label">Dword &nbsp;</span>
+                    <input type="radio" name="range" value="word"/><span class="label">Word &nbsp;</span>
+                    <input type="radio" name="range" value="byte"/><span class="label">Byte</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="down">
+            <!-- Right-side buttons -->
+            <div class="right">
+                <div class="left_column">
+                    <span class="square read_only"><input type="text" name="mem" readonly="readonly"/></span>
+                    <a class="button square red" href="">MC</a>
+                    <a class="button square red" href="">MR</a>
+                    <a class="button square red" href="">MS</a>
+                    <a class="button square red" href="">M+</a>
+                    <span class="scientific"><a class="button square blue decimal" href="">pi</a></span>
+                </div>
+
+                <a class="button rectangle red" href="">Backspace</a>
+                <a class="button rectangle red" href="">CE</a>
+                <a class="button rectangle red scientific" href="">CA</a>
+                <a class="button square red standard" href="">CA</a>
+
+                <a class="button square blue hexadecimal decimal octal" href="">7</a>
+                <a class="button square blue hexadecimal decimal" href="">8</a>
+                <a class="button square blue hexadecimal decimal" href="">9</a>
+                <a class="button square red" href="">/</a>
+                <a class="button square red scientific" href="">Mod</a>
+                <a class="button square red scientific" href="">And</a>
+                <a class="button square blue standard" href="">sqrt</a>
+
+                <a class="button square blue hexadecimal decimal octal" href="">4</a>
+                <a class="button square blue hexadecimal decimal octal" href="">5</a>
+                <a class="button square blue hexadecimal decimal octal" href="">6</a>
+                <a class="button square red" href="">*</a>
+                <a class="button square red scientific" href="">Or</a>
+                <a class="button square red scientific" href="">Xor</a>
+                <a class="button square blue standard" href="">%</a>
+
+                <a class="button square blue" href="">1</a>
+                <a class="button square blue hexadecimal decimal octal" href="">2</a>
+                <a class="button square blue hexadecimal decimal octal" href="">3</a>
+                <a class="button square red" href="">-</a>
+                <a class="button square red scientific" href="">Lsh</a>
+                <a class="button square red scientific" href="">Not</a>
+                <a class="button square blue standard" href="">1/x</a>
+
+                <a class="button square blue" href="">0</a>
+                <a class="button square blue" href="">+/-</a>
+                <a class="button square blue decimal" href="">.</a>
+                <a class="button square red" href="">+</a>
+                <a class="button square red" href="">=</a>
+                <a class="button square red scientific" href="">Int</a>
+
+                <a class="button square fuchsia scientific hexadecimal" href="">A</a>
+                <a class="button square fuchsia scientific hexadecimal" href="">B</a>
+                <a class="button square fuchsia scientific hexadecimal" href="">C</a>
+                <a class="button square fuchsia scientific hexadecimal" href="">D</a>
+                <a class="button square fuchsia scientific hexadecimal" href="">E</a>
+                <a class="button square fuchsia scientific hexadecimal" href="">F</a>
+
+                <div style="clear:both"></div>
+            </div>
+            
+            <!-- Left-side buttons -->
+            <div class="left scientific">
+
+                <div class="row">
+                    <div class="inv_hyp_column">
+                        <input type="checkbox" name="inv" value="inv"/> <span class="label">Inv</span>
+                        &nbsp;&nbsp;
+                        <input type="checkbox" name="hyp" value="hyp"/> <span class="label">Hyp</span>
+                    </div>
+
+                    <span class="square read_only"><input type="text" name="par" readonly="readonly"/></span>
+
+                    <div style="clear:both"></div>
+                </div>
+                    
+
+                <div class="left_column">
+                    <a class="button square blue" href="">Sta</a>
+                    <a class="button square blue stadistic" href="">Ave</a>
+                    <a class="button square blue stadistic" href="">Sum</a>
+                    <a class="button square blue stadistic" href="">s</a>
+                    <a class="button square blue stadistic" href="">Dat</a>
+                </div>
+
+                <a class="button square fuchsia decimal" href="">F-E</a>
+                <a class="button square fuchsia" href="">(</a>
+                <a class="button square fuchsia" href="">)</a>
+
+                <a class="button square fuchsia decimal" href="">dms</a>
+                <a class="button square fuchsia decimal" href="">Exp</a>
+                <a class="button square fuchsia" href="">ln</a>
+
+                <a class="button square fuchsia decimal" href="">sin</a>
+                <a class="button square fuchsia" href="">x^y</a>
+                <a class="button square fuchsia" href="">log</a>
+
+                <a class="button square fuchsia decimal" href="">cos</a>
+                <a class="button square fuchsia" href="">x^3</a>
+                <a class="button square fuchsia" href="">n!</a>
+
+                <a class="button square fuchsia decimal" href="">tan</a>
+                <a class="button square fuchsia" href="">x^2</a>
+                <a class="button square fuchsia" href="">1/x</a>
+
+                <div style="clear:both"></div>
+            </div>
+
+            <div style="clear:both"></div>
+        </div>
+
+        <div id="HistrixCalculator_stadistics">
+            <div>
+                <select name="datos" multiple="multiple" size="4" style="width:100%;">
+
+                </select>
+            </div>
+            <div>
+                <button name="ret" class="">Ret</button>
+                <button name="load" class="">Load</button>
+                <button name="cd" class="">CD</button>
+                <button name="cad" class="">CAD</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<br />
+<hr />
+Code adapted from https://github.com/jfmdev/histrix, under <a href="https://github.com/jfmdev/histrix/blob/master/license.txt" target="_blank">GNU General Public License v3.0</a>.
