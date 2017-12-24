@@ -2,6 +2,10 @@ url: http://www.andrew.cmu.edu/user/zinanl
 #url: file:///E:/新笔记本%202017.2.12起/个人网站/fjxmlzn.github.io/_site
 #incremental: true
 
+plugins:
+    -
+        jekyll-sitemap
+
 # variables
 name: Zinan Lin's homepage
 description: Zinan Lin's homepage
@@ -10,7 +14,7 @@ google_verification: null
 
 # File management
 include: [".htaccess"]
-exclude: ["README.md", "LICENSE", "TODO.txt"]
+exclude: ["README.md", "LICENSE", "TODO.txt", "Gemfile", "Gemfile.lock"]
 
 # Sass
 sass:
