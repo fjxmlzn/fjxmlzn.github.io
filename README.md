@@ -1,8 +1,10 @@
 # Zinan Lin's Homepage
 
+Run `bundle` to install dependencies.
+
 Run `jekyll serve` to preview the website on http://localhost:4000.
 
-Run `jekyll build` to generate the website files under _site folder.
+Run `jekyll build` to generate the website files under `_site` folder.
 
 Hosted on
 * http://www.andrew.cmu.edu/user/zinanl/
