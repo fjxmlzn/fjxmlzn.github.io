@@ -152,8 +152,8 @@ ul.topbar {
 .post_list {
     width: 98.7%;
     margin: 0 auto;
-    #min-height: 150px;
-    #max-height: 150px;
+    /*min-height: 150px;*/
+    /*max-height: 150px;*/
     min-height: calc(60% - 66px);
     max-height: calc(60% - 66px);
     overflow-y: scroll;
@@ -187,8 +187,8 @@ ul.topbar {
 .tag_list {
     width: 98.7%;
     margin: 0 auto;
-    #min-height: 150px;
-    #max-height: 150px;
+    /*min-height: 150px;*/
+    /*max-height: 150px;*/
     min-height: 40%;
     max-height: 40%;
     overflow-y: scroll;
@@ -254,8 +254,8 @@ ul.topbar {
 .post_content {
     position: relative;
     width: 98.5%;
-    #min-height: 600px;
-    #max-height: 600px;
+    /*min-height: 600px;*/
+    /*max-height: 600px;*/
     min-height: calc(100% - 65px);
     max-height: calc(100% - 65px);
     height: calc(100% - 65px);
