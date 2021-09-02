@@ -1,4 +1,4 @@
-url: http://www.andrew.cmu.edu/user/zinanl
+url: https://www.andrew.cmu.edu/user/zinanl
 
 incremental: true
 
@@ -60,4 +60,4 @@ defaults:
         scope:
             path: ""
         values:
-            icon: "http://www.andrew.cmu.edu/user/zinanl/assets/img/file.ico"
+            icon: "https://www.andrew.cmu.edu/user/zinanl/assets/img/file.ico"
