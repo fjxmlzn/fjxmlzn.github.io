@@ -60,4 +60,4 @@ defaults:
         scope:
             path: ""
         values:
-            icon: "https://www.andrew.cmu.edu/user/zinanl/assets/img/file.ico"
+            icon: "https://zinanlin.me/assets/img/file.ico"
