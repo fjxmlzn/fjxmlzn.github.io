@@ -15,25 +15,29 @@
         <title>{{ site.name }}</title>
         <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/001.css">
     {% endif %}
+    <link rel="stylesheet" href="{{site.url}}/assets/css/blog.css">
     <link rel="stylesheet" href="{{site.url}}/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{site.url}}/assets/css/win95.css">
     <link rel="stylesheet" href="{{site.url}}/assets/css/window.css">
     <link rel="stylesheet" href="{{site.url}}/assets/css/widgets.css">
     <link rel="stylesheet" href="{{site.url}}/assets/css/taskbar.css">
     <link rel="stylesheet" href="{{site.url}}/assets/css/start.css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/syntax.css">
     <link rel="shortcut icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
-    <script src="{{site.url}}/assets/js/highlight.pack.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
     <script src="{{site.url}}/assets/js/jquery.js"></script>
     <script src="{{site.url}}/assets/js/jquery-ui.min.js"></script>
     <script src="{{site.url}}/assets/js/win95.js"></script>
     <script src="{{site.url}}/assets/js/clock.js"></script>
     <script src="{{site.url}}/assets/js/widgets.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
     {% assign array = page.id | split: "/"%}
     {% assign current_collection = array[1] %}
+    {% if current_collection == "blogs" %}
+        <script src="{{site.url}}/assets/js/anchor_links.js"></script>
+    {% endif %}
     <div class="wrapper">
         <div class="default_title">
             <img src="{{site.url}}/assets/img/mycomputer.png" />
@@ -60,9 +64,9 @@
             <ul>
                 {% for post in site[current_collection] %}
                     {% if post.id == page.id %}
-                        <li class="hit"><a href="{{ site.url }}{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
+                        <li class="hit"><a href="{{ site.url }}{{  post.url }}#post" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
                     {% else %}
-                        <li><a href="{{ site.url }}{{  post.url }}" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
+                        <li><a href="{{ site.url }}{{  post.url }}#post" title="{{ post.title }}"><img height="32px" src="{{ post.icon }}" title="{{ post.title }}" />{{ post.title }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -90,8 +94,14 @@
             <ul class="topbar">
                 <li>Last updated: {{ site.time | date: '%B %-d, %Y' }}</li>
             </ul>
-            <div class="post_content">
-                {{ content }}
+            <div class="post_content" id="post">
+                {% if page.class %}
+                    <div class="{{ page.class }}">
+                {% endif %}
+                        {{ content }}
+                {% if page.class %}
+                    </div>
+                {% endif %}
             </div>
         </div>
     {% endif %}

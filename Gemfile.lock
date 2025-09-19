@@ -52,6 +52,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redcarpet (3.6.1)
     rexml (3.2.5)
     rouge (3.26.0)
     safe_yaml (1.0.5)
@@ -62,6 +63,7 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
@@ -70,6 +72,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-sitemap
+  redcarpet
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.3.19

@@ -1,0 +1,131 @@
+.blog {
+  background: #fff;
+  color: #222;
+  font-family: "Merriweather", Georgia, serif;
+  max-width: 75%;
+  margin: 2rem auto;
+  padding: 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Headings - bold and elegant */
+.blog h1, .blog h2, .blog h3, .blog h4, .blog h5, .blog h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog h1 {
+  font-size: 2.2rem;
+  border-bottom: 3px double #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.blog h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3rem;
+}
+
+.blog h3 { font-size: 1.4rem; color: #444; }
+.blog h4, .blog h5, .blog h6 { font-size: 1.2rem; color: #555; }
+
+/* Paragraphs */
+.blog p {
+  margin: 1rem 0;
+  color: #333;
+}
+
+/* Links - subtle highlight with smooth transition */
+.blog a {
+  color: #0066cc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+.blog a:hover {
+  color: #004999;
+  border-bottom: 1px solid #004999;
+}
+
+/* Lists */
+.blog ul, .blog ol {
+  margin: 0.6rem 1.5rem;
+  padding-left: 1.2rem;
+}
+.blog li {
+  margin: 0.1rem 0;
+  line-height: 1.4;
+}
+
+/* Code blocks - with soft background and shadow */
+.blog pre, .blog code {
+  font-family: "Fira Code", monospace;
+  background: #f5f7fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+.blog pre {
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* Blockquotes - modern highlight style */
+.blog blockquote {
+  border-left: 4px solid #0066cc;
+  background: #f9fcff;
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #444;
+  border-radius: 4px;
+}
+
+/* Horizontal line */
+.blog hr {
+  border: 0;
+  border-top: 1px dashed #ddd;
+  margin: 2rem 0;
+}
+
+/* Images - center with hover zoom */
+.blog img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.blog img:hover {
+  transform: scale(1.02);
+}
+
+/* Fancy table style if you have tables */
+.blog table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+.blog th, .blog td {
+  border: 1px solid #e1e1e1;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+.blog th {
+  background: #f2f2f2;
+  font-weight: 600;
+}
