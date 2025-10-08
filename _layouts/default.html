@@ -51,9 +51,9 @@
                 {% assign collections = site.collections | where_exp: "item", "item.label != 'posts'" | sort: "pos"%}
                 {% for collection in collections %}
                     {% if collection.label == current_collection %}
-                        <li class="hit"><a href="{{site.url}}/{{collection.label}}" title="{{collection.name}}"><img src="{{site.url}}/assets/img/folder.ico" />{{ collection.name }}</a></li>
+                        <li class="hit"><a href="{{site.url}}/{{collection.label}}/index.html#post" title="{{collection.name}}"><img src="{{site.url}}/assets/img/folder.ico" />{{ collection.name }}</a></li>
                     {% else %}
-                        <li><a href="{{site.url}}/{{collection.label}}" title="{{collection.name}}"><img src="{{site.url}}/assets/img/folder.ico" />{{ collection.name }}</a></li>
+                        <li><a href="{{site.url}}/{{collection.label}}/index.html#post" title="{{collection.name}}"><img src="{{site.url}}/assets/img/folder.ico" />{{ collection.name }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
