@@ -8,7 +8,7 @@ class: "blog"
 
 {% for blog in site.blogs %}
 {% if blog.title != "Blogs" %}
-* ({{ blog.show_date }}) [{{blog.title}}]({{ site.url }}{{ blog.url }})
+* ({{ blog.show_date }}) [{{blog.title}}]({{ site.url }}{{ blog.url }}#post)
     * {{ blog.desc }}
 {% endif %}
 {% endfor %}

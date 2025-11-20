@@ -9,7 +9,11 @@ class: "blog"
 # Latent Zoning Network: A Unified Principle for Generative Modeling, Representation Learning, and Classification
 
 > 👤 **Author:** Zinan Lin  
-> 📅 **Date:** September 18, 2025
+> 📅 **Date:** September 18, 2025  
+> 📄 **Paper (NeurIPS 2025):** [Link to paper](https://arxiv.org/abs/2509.15591)  
+> 💻 **Code:** [Link to code](https://github.com/microsoft/latent-zoning-networks)  
+> 🧠 **Models:** [Link to models](https://huggingface.co/microsoft/latent-zoning-networks)  
+> 🌐 **Website:** [Link to website](https://zinanlin.me/blogs/latent_zoning_networks.html#post)
 
 The machine learning landscape has seen remarkable advances in **generative modeling** (e.g., [OpenAI's DALL·E](https://openai.com/research/dall-e) for image generation and [ChatGPT](https://openai.com/chatgpt) for text generation), **representation learning** (e.g., [OpenAI's CLIP](https://openai.com/research/clip) for text and image representation), and **classification** (e.g., [ResNet](https://arxiv.org/abs/1512.03385) for image classification). Yet each of these tasks typically relies on *separate* methods and training objectives.  
 
@@ -85,9 +89,9 @@ Please see [our paper](https://arxiv.org/abs/2509.15591) for more implementation
 
 ## Links
 
-* **Paper:** [https://arxiv.org/abs/2509.15591](https://arxiv.org/abs/2509.15591)
+* **Paper (NeurIPS 2025):** [https://arxiv.org/abs/2509.15591](https://arxiv.org/abs/2509.15591)
 * **Code:** [https://github.com/microsoft/latent-zoning-networks](https://github.com/microsoft/latent-zoning-networks)
-* **Pretrained models:** [https://huggingface.co/microsoft/latent-zoning-networks](https://huggingface.co/microsoft/latent-zoning-networks)
+* **Models:** [https://huggingface.co/microsoft/latent-zoning-networks](https://huggingface.co/microsoft/latent-zoning-networks)
 * **Website:** [https://zinanlin.me/blogs/latent_zoning_networks.html](https://zinanlin.me/blogs/latent_zoning_networks.html)
 * **BibTex**:
 ```bibtex
