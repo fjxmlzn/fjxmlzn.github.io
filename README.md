@@ -1,6 +1,8 @@
+
+
 # Zinan Lin's Homepage
 
-Run `bundle` to install dependencies.
+Run `bundle install` to install dependencies.
 
 Run `jekyll serve` to preview the website on http://localhost:4000.
 
